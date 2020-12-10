@@ -1,0 +1,197 @@
+/**
+* DISCLAIMER
+*
+* Do not edit or add to this file if you wish to upgrade this module to newer
+* versions in the future. If you wish to customize this module for your
+* needs please contact us at contact@devhub.pl
+*
+*  @author    Devhub <contact@devhub.pl>
+*  @copyright (c)2016 Devhub
+*  @package   ProductLookbooks
+*/
+
+#productlookbooks { position: relative; padding: 0 45px; }
+#productlookbooks .outer-slider { position: relative; overflow: hidden; }
+#productlookbooks .inner-slider { position: relative; left: 0; }
+#productlookbooks .item { position: relative; float: left; }
+#productlookbooks .item img { display: block; max-width: 100%; }
+#productlookbooks .associated-products { position: absolute; background: rgba(0,0,0,0.5); color: #fff; text-shadow: 0 0 1px #964211; z-index: 35; -webkit-transition: opacity 0.35s ease, top 0.35s ease; transition: opacity 0.35s ease, top 0.35s ease; left: 0; right: 0; top: 100%; height: 100%; }
+#productlookbooks .associated-products button { position: absolute; top: -40px; right: 0; left: 0; width: 40px; height: 40px; margin: auto; padding: 0; background: none; border: none; font-size: 30px; color: #fff; text-shadow: 0 0 3px #000; }
+#productlookbooks .associated-products button::before { content: '\f077'; font-family: FontAwesome; }
+#productlookbooks .associated-products button:focus,
+#productlookbooks .associated-products button:hover { outline: none; }
+#productlookbooks .item.show-associated .associated-products { top: 0; }
+#productlookbooks .item.show-associated .associated-products button { top: 0; }
+#productlookbooks .item.show-associated .associated-products button::before { content: '\f078'; }
+#productlookbooks .associated-products h2 { display: inline-block; vertical-align: top; border-bottom: 2px solid #fff; padding: 0 7.5px; font-size: 1.5em; }
+#productlookbooks .associated-products-inner { padding: 7px; position: absolute; margin: auto; text-align: center; }
+#productlookbooks .associated-products-inner.set { left: 0; right: 0; top: 0; bottom: 0; }
+#productlookbooks .product-rows { display: inline-block; vertical-align: top; }
+#productlookbooks .product-row {  }
+#productlookbooks .product-row a { color: #fff; text-shadow: 0 0 2px #000; margin: 0 0 5px; font-size: 11px; }
+#productlookbooks .product-row a:hover { text-decoration: underline; }
+#productlookbooks .name {  }
+#productlookbooks .price { color: inherit; font-weight: bold; }
+#productlookbooks .pagination { display: none; }
+#productlookbooks .navigation {  }
+#productlookbooks .navigation button { position: absolute; top: 0; bottom: 0; width: 45px; background: none; border: none; text-align: center; z-index: 30; }
+#productlookbooks .navigation button::before { color: #000; font-family: FontAwesome; font-size: 35px; }
+#productlookbooks .navigation button:focus,
+#productlookbooks .navigation button:active { outline: none; }
+#productlookbooks .navigation button[data-direction="prev"] { left: 0; }
+#productlookbooks .navigation button[data-direction="prev"]::before { content: '\f053'; }
+#productlookbooks .navigation button[data-direction="next"] { right: 0; }
+#productlookbooks .navigation button[data-direction="next"]::before { content: '\f054'; }
+#productlookbooks .pages-count { text-align: right; }
+#productlookbooks .pages-count-inner { display: inline-block;vertical-align: top;background: rgba(0,0,0,0.5);color: #fff;padding: 6px 10px; }
+
+@media (min-width: 450px) {
+    #productlookbooks .associated-products h2 { padding: 0 15px 7px; margin-top: 18px; margin-bottom: 9px; }
+    #productlookbooks .associated-products-inner { padding: 15px; }
+    #productlookbooks .product-row a { font-size: 14px; line-height: 1.5em; }
+}
+@media (min-width: 768px) {
+    #productlookbooks { padding-left: 75px; padding-right: 75px; }
+    #productlookbooks .inner-slider { -webkit-transition: left 0.35s ease; transition: left 0.35s ease; }
+    #productlookbooks .associated-products { opacity: 0; top: 0; bottom: 0; height: auto; }
+    #productlookbooks .item:hover .associated-products { opacity: 1; }
+    #productlookbooks .associated-products button { display: none; }
+    #productlookbooks .navigation button { width: 75px; -webkit-transition: opacity 0.35s ease; transition: opacity 0.35s ease; opacity: 0.33; }
+    #productlookbooks .navigation button:hover { opacity: 1; }
+    #productlookbooks .navigation button::before { font-size: 50px; }
+}
+
+
+#productlookbooks-slider { display: block; overflow: hidden; position: relative; background: #ffffff; }
+#productlookbooks-slider::before,
+#productlookbooks-slider::after { content: ''; display: block; clear: both; }
+
+#productlookbooks-slider-products,
+#productlookbooks-slider-presentation { position: relative; }
+
+#productlookbooks-slider-presentation { float: right; }
+
+#productlookbooks-slider-products { float: left; }
+.productlookbooks-slider-product-wrap { position: absolute; left: 0; top: 0; opacity: 0; visibility: hidden; z-index: 9; min-height: 100px; padding: 0; }
+.productlookbooks-slider-product-wrap { -webkit-transition: opacity 250ms ease, visibility 250ms ease; -moz-transition: opacity 250ms ease, visibility 250ms ease; -ms-transition: opacity 250ms ease, visibility 250ms ease; -o-transition: opacity 250ms ease, visibility 250ms ease; transition: opacity 250ms ease, visibility 250ms ease; }
+.productlookbooks-slider-product-wrap::before,
+.productlookbooks-slider-product-wrap::after { content: ''; display: block; clear: both; }
+.productlookbooks-slider-product {margin-bottom: 30px;/* font-family: 'Open Sans', Arial; */color: #252525; padding: 0 25px;}
+.productlookbooks-slider-product.col-2 { float: left; width: 50%; }
+.productlookbooks-slider-product .productlookbooks-slider-product-image-wrap {margin: 0 0 10px;}
+.productlookbooks-slider-product .productlookbooks-slider-product-image {max-width: 100%;display: block;margin: auto;}
+.productlookbooks-slider-product .productlookbooks-slider-product-name {font-size: 13px;font-weight: 400;margin: 0;text-transform: uppercase;}
+.productlookbooks-slider-product .productlookbooks-slider-product-price-wrap {position: relative;}
+.productlookbooks-slider-product .productlookbooks-slider-product-price-wrap::before {content: '';height: 1px;background: #252525;position: absolute;left: 0;right: 0;top: 0;bottom: 0;margin: auto;}
+.productlookbooks-slider-product .productlookbooks-slider-product-price {background: #fff;position: relative;display: inline-block;vertical-align: top;padding: 0 7.5px;font-size: 14px;font-weight: 700;color: #252525;}
+.productlookbooks-slider-product .productlookbooks-slider-product-price-promo { text-decoration: line-through; font-size: 12px; line-height: 1.2em; }
+.productlookbooks-slider-product .productlookbooks-slider-product-price.reduced { color: #de0a0a; }
+
+#productlookbooks-slider-images-wrap { position: relative; overflow: hidden; background: #333333; }
+#productlookbooks-slider-images { position: relative; white-space: nowrap; font-size: 0; left: 0; top: 0; }
+#productlookbooks-slider-images { -webkit-transition: left 0.35s ease; transition: left 0.35s ease; }
+.productlookbooks-slider-slide { display: inline-block; vertical-align: top; position: relative; opacity: 0.25; cursor: pointer; }
+.productlookbooks-slider-slide { -webkit-transition: opacity 0.35s ease; transition: opacity 0.35s ease; }
+.productlookbooks-slider-slide:hover { opacity: 0.75; }
+.productlookbooks-slider-slide.active { opacity: 1; cursor: default; }
+.productlookbooks-slider-image-wrap { height: 100%; }
+.productlookbooks-slider-image { display: block; height: 100%; position: relative; z-index: 20; opacity: 0; -webkit-transition: opacity 0.35s linear; transition: opacity 0.35s linear;  }
+
+.productlookbooks-slider-rewind { display: inline-block; vertical-align: top; width: 100%; cursor: pointer; }
+
+.productlookbooks-slider-info.productlookbooks-text-color-0 { color: #ffffff; text-shadow: 1px 1px 2px rgba(0,0,0,0.5); }
+.productlookbooks-slider-info.productlookbooks-text-color-1 { color: #000000; text-shadow: none; }
+.productlookbooks-slider-info p { color: inherit; }
+.productlookbooks-slider-info { position: absolute; z-index: 25; padding: 30px 0; opacity: 0; -webkit-transition: opacity 0.35s ease; transition: opacity 0.35s ease; line-height: 1.2em; font-weight: 300; font-family: 'Open Sans', Arial; font-size: 24px; }
+.productlookbooks-slider-slide.active .productlookbooks-slider-info { opacity: 1; }
+.productlookbooks-slider-title {padding: 3px 0;border: solid; border-width: 1px 0;margin: 0 0 19px; display: inline-block; vertical-align: top; }
+.productlookbooks-slider-text {font-size: 14px; line-height: 1.1em; padding: 5px 0; border: solid; border-width: 0 0 1px 0; display: inline-block; vertical-align: top; }
+.productlookbooks-slider-text p:last-of-type { margin-bottom: 0; }
+
+.productlookbooks-text-position-0 { left: 0; top: 0; text-align: left; }
+.productlookbooks-text-position-1 { right: 0; top: 0; text-align: right; }
+.productlookbooks-text-position-2 { left: 0; bottom: 0; text-align: left; }
+.productlookbooks-text-position-3 { right: 0; bottom: 0; text-align: right; }
+.productlookbooks-text-position-0 .productlookbooks-slider-title,
+.productlookbooks-text-position-2 .productlookbooks-slider-title,
+.productlookbooks-text-position-0 .productlookbooks-slider-text,
+.productlookbooks-text-position-2 .productlookbooks-slider-text { padding-left: 20px; }
+.productlookbooks-text-position-1 .productlookbooks-slider-title,
+.productlookbooks-text-position-3 .productlookbooks-slider-title,
+.productlookbooks-text-position-1 .productlookbooks-slider-text,
+.productlookbooks-text-position-3 .productlookbooks-slider-text { padding-right: 20px; }
+
+.productlookbooks-slider-product { position: relative;text-align: center; }
+.productlookbooks-slider-product:hover .productlookbooks-slider-product-overlay { opacity: 1; }
+.productlookbooks-slider-product-overlay {position: absolute;top: 0;left:0;right: 0;bottom: 0;opacity: 0;background: rgba(255,255,255,0.5); -webkit-transition: opacity 0.35s ease; transition: opacity 0.35s ease;}
+.productlookbooks-slider-product-overlay-button {margin: auto;position: absolute;top: 110px;left: 0;right: 0;font-size: 12px;height: 26px;line-height: 22px;width: 100px;border: 2px solid #ffffff;background: #000 /*rgba(0,0,0,0.6)*/;color: #ffffff;text-transform: uppercase; -webkit-transition: background-color 0.35s ease; transition: background-color 0.35s ease;}
+.productlookbooks-slider-product-overlay-button:hover { background-color: rgba(0,0,0,0.8); }
+
+.productlookbooks-slider-slide.loaded .productlookbooks-slider-loader-wrapper { display: none; }
+.productlookbooks-slider-loader-wrapper { position: absolute; top: 0; left: 0; right: 0; bottom: 0; margin: auto; width: 150px; height: 150px; z-index: 10; overflow: hidden; }
+.productlookbooks-slider-loader-wrapper::before { content: ""; position: absolute; top: 5px; left: 5px; right: 5px; bottom: 5px; border-radius: 50%; border: solid transparent; -webkit-animation: spin-reverse .6s linear infinite; animation: spin-reverse .6s linear infinite; }
+.productlookbooks-slider-loader-wrapper::after { content: ""; position: absolute; top: 15px; left: 15px; right: 15px; bottom: 15px; border-radius: 50%; border: solid transparent; -webkit-animation: spin 1s linear infinite; animation: spin 1s linear infinite; }
+.productlookbooks-slider-loader { display: block; position: relative; left: 50%; top: 50%; width: 150px; height: 150px; margin: -75px 0 0 -75px; border-radius: 50%; border: solid transparent; -webkit-animation: spin 1.7s linear infinite; animation: spin 1.7s linear infinite; z-index: 11; }
+
+.productlookbooks-slider-loader-wrapper::before { border-top-color: #ffffff; }
+.productlookbooks-slider-loader-wrapper::after { border-top-color: #ffffff; }
+.productlookbooks-slider-loader { border-top-color: #ffffff; }
+
+.productlookbooks-slider-loader-wrapper::before,
+.productlookbooks-slider-loader-wrapper::after,
+.productlookbooks-slider-loader { border-width: 3px; }
+
+#productlookbooks-slider-nav { position: absolute; bottom: 0; right: 0; font-size: 0; margin: 15px; border: 1px solid #ffffff; z-index: 30; background: rgba(0, 0, 0, 0.5); }
+#productlookbooks-slider-nav button { font-size: 20px; display: block; float: left; background: rgba(255,255,255,0.3); border: 1px solid; border-color: inherit; width: 40px; height: 40px; line-height: 40px; color: #fff; }
+#productlookbooks-slider-nav button { -webkit-transition: background-color 0.35s ease; transition: background-color 0.35s ease; }
+#productlookbooks-slider-nav button:hover { background-color: rgba(0,0,0,0.5); }
+#productlookbooks-slider-nav button,
+#productlookbooks-slider-nav button:hover,
+#productlookbooks-slider-nav button:active,
+#productlookbooks-slider-nav button:focus { outline: none; }
+#productlookbooks-slider-nav .productlookbooks-slider-nav-products { width: auto; font-size: 16px; }
+#productlookbooks-slider-nav .productlookbooks-slider-nav-products i { font-size: 20px; margin-right: 5px; }
+#productlookbooks-slider-nav .material-icons { font-size: 30px; vertical-align: text-top; width: 26px; height: 26px; line-height: 27px; }
+
+#productlookbooks-slider-wrapper.is_homepage,
+#productlookbooks.is_homepage { margin: 30px 0; }
+
+@-webkit-keyframes spin { 0% { -webkit-transform: rotate(0deg); } 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 0% { -webkit-transform: rotate(0deg); transform: rotate(0deg); } 100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); } }
+@-webkit-keyframes spin-reverse { 0% { -webkit-transform: rotate(0deg); } 100% { -webkit-transform: rotate(-360deg); } }
+@keyframes spin-reverse { 0% { -webkit-transform: rotate(0deg); transform: rotate(0deg); } 100% { -webkit-transform: rotate(-360deg); transform: rotate(-360deg); }}
+
+@media (min-width: 768px) {
+    #productlookbooks-slider-nav .productlookbooks-slider-nav-products { display: none; }
+}
+@media (max-width: 767px) {
+    #productlookbooks-slider-products,
+    #productlookbooks-slider-presentation { float: none; min-width: 100%; text-align: center; }
+    #productlookbooks-slider-presentation { min-width: 100%; }
+    
+    .productlookbooks-slider-info { padding: 20px 0; }
+    
+    .productlookbooks-slider-product-wrap { display: inline-block; vertical-align: top; left: 0; right: 0; margin: auto; width: inherit; width: 100%; }
+    
+    #productlookbooks-slider-products {margin-top: 15px;clear: both;}
+    .productlookbooks-slider-product { padding: 0 15px; max-width: 200px; display: inline-block; vertical-align: top; }
+    
+    #productlookbooks-slider-nav {position: relative;float: right;}
+    #productlookbooks-slider-nav button {position: relative;float: none;display: inline-block;vertical-align: top;}
+}
+@media (max-width: 500px) {
+    .productlookbooks-slider-text { display: none; }
+    
+    .productlookbooks-slider-title { font-size: 0.7em; line-height: 1.3em; }
+    
+    .productlookbooks-slider-product { max-width: 160px; }
+    
+    .productlookbooks-text-position-0 .productlookbooks-slider-title,
+    .productlookbooks-text-position-2 .productlookbooks-slider-title,
+    .productlookbooks-text-position-0 .productlookbooks-slider-text,
+    .productlookbooks-text-position-2 .productlookbooks-slider-text { padding-left: 10px; }
+    .productlookbooks-text-position-1 .productlookbooks-slider-title,
+    .productlookbooks-text-position-3 .productlookbooks-slider-title,
+    .productlookbooks-text-position-1 .productlookbooks-slider-text,
+    .productlookbooks-text-position-3 .productlookbooks-slider-text { padding-right: 10px; }
+}

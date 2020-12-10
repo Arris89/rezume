@@ -1,0 +1,116 @@
+<?
+$aMenuLinks = Array(
+	Array(
+		"О бренде", 
+		"/o-brende/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Реквизиты", 
+		"/rekvizity/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Договор публичной оферты", 
+		"/dogovor-publichnoy-oferty/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Накопительные скидки", 
+		"/publichnye-skidki/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Защита информации", 
+		"/zashchita-informatsii/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Контакты", 
+		"/kontakty/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Доставка и оплата", 
+		"/dostavka-i-oplata/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Как сделать заказ", 
+		"/kak-sdelat-zakaz/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Оплата", 
+		"/oplata/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Доставка и возврат", 
+		"/dostavka-i-vozvrat/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Карта сайта", 
+		"/karta-sayta/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"О нас", 
+		"/o-nas/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Вакансии", 
+		"/vakansii/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Партнерам", 
+		"/partneram/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Блог", 
+		"/blog/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"cust", 
+		"/cust.php", 
+		Array(), 
+		Array(), 
+		"" 
+	)
+);
+?>

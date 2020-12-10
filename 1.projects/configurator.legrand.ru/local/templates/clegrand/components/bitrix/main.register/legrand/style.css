@@ -1,0 +1,16 @@
+.register-form__errors,
+.input-error .checker__text{
+    color: #ef4029;
+}
+.register-form__errors,
+.register-form__success{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.register-form__success{
+    color: #1fc57e;
+}
+
+.input-error .checker__box{
+    border-color: #ef4029;
+}

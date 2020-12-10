@@ -1,0 +1,162 @@
+/* ================================================ */
+html, body, div, span, applet, main, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, main, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+
+body { margin: 0px; padding: 0px;  background-color: #ffffff; height: 100%; position: relative; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
+blockquote, q { quotes: none; }
+
+blockquote:before, blockquote:after { content: ""; content: none; }
+
+q:before, q:after { content: ""; content: none; }
+
+table { border-collapse: collapse; border-width: 0px; padding: 0px; margin: 0px; }
+
+html { height: 100%; -webkit-text-size-adjust: none; -ms-text-size-adjust: none; }
+
+input, textarea { font-family: "Ubuntu", sans-serif; color: #333; outline: none; border-radius: 0; -moz-border-radius: 0; -webkit-border-radius: 0; -webkit-appearance: none; }
+
+input[type="button"], input[type="submit"] { cursor: pointer; -webkit-appearance: none; outline: none; }
+
+button { cursor: pointer; -webkit-appearance: none; outline: none; }
+
+td, form { margin: 0px; padding: 0px; }
+
+ul { list-style: none; }
+
+a { color: #2f2c2d; -webkit-transition: all 0.3s linear; -o-transition: all 0.3s linear; transition: all 0.3s linear; text-decoration: none; outline: none; -webkit-tap-highlight-color: transparent; -webkit-tap-highlight-color: transparent; }
+
+* { -webkit-box-sizing: border-box; box-sizing: border-box; }
+*:before, *:after { -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.clearfix:after { content: ""; display: block; height: 0; clear: both; visibility: hidden; }
+
+.content { overflow: hidden; position: relative; }
+
+#map {
+	height: 100%;
+}
+
+.flex {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	&-align-center {
+		align-items: center;
+	}
+	&-align-end {
+		align-items: flex-end;
+	}
+	&-align-start {
+		align-items: flex-start;
+	}
+	&-justify-end {
+		justify-content: flex-end;
+	}
+	&-justify-start {
+		justify-content: flex-start;
+	}
+}
+
+.section {
+	padding-bottom: 80px;
+	&-top {
+		padding-top: 305px;
+	}
+}
+
+.box__arrow {
+	position: absolute;
+	width: 48px;
+	height: 48px;
+	background-color: #fff;
+	border-radius: 100%;
+	top: calc(50% - 24px);
+	padding: 17px 10px;
+	cursor: pointer;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.22);
+	&_left {
+		left: -14px;
+		&_row {
+			left: -14px;
+		}
+	}
+	&_right {
+		right: -14px;
+		&_row {
+			right: -14px;
+		}
+	}
+}
+
+.arrow {
+	width: 23px;
+	height: 14px;
+	&.arrow-prev {
+		left: 0px;
+		background-image: url(../img/icons/arrow.svg);
+		transform: rotate(180deg);
+		background-repeat: no-repeat;
+    	background-size: contain;
+	}
+	&.arrow-next {
+		right: 0;
+		background-image: url(../img/icons/arrow.svg);
+		background-repeat: no-repeat;
+    	background-size: contain;
+	}
+}
+
+.slick__arrow {
+	position: absolute;
+	width: 20px;
+	height: 36px;
+	background-image: url(../img/icons/mainslider-arrow.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	top: calc(50% - 18px);
+	cursor: pointer;
+	&_left {
+		left: 0px;
+		transform: rotate(-180deg);
+	}
+	&_right {
+		right: 0px;
+	}
+}
+
+/* FadeInUp on Scroll transition */
+.fadeInUp-scroll.visible {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+  transition: all 1s;
+}
+
+@media only screen and (max-width: 767px) {
+	.section {
+		padding-bottom: 50px;
+		&-top {
+			padding-top: 305px;
+		}
+	}
+}
+@media only screen and (max-width: 650px) {
+	.box__arrow {
+		width: 40px;
+		height: 40px;
+		padding: 13px 8px;
+		&_left {
+			left: 0px;
+		}
+		&_right {
+			right: 0px;
+		}
+	}
+}
+@media only screen and (max-width: 424px) {
+	.box__arrow {
+		top: calc(45% - 20px);
+	}
+}

@@ -1,0 +1,54 @@
+.header-menu { font-weight: 400; }
+.header-menu a.login {	border-radius: 10px;	padding: 0;
+	width: 35px; 	height: 35px;	opacity: 1;	background-color: #D60000;	background-image: url(../images/login.svg);	background-repeat: no-repeat;	background-position: center;
+}
+.header-menu a.login:hover, .header-menu a.login:focus, .header-menu a.login:active { 	opacity: .7; }
+@media (min-width: 1681px) {
+	.header-menu a.login { 		width: 50px; 		height: 50px; 	}
+	.is-fixed .header-menu a.login { 		width: 35px; 		height: 35px; 		padding: 0; 	}
+}
+.booking__title {
+	font-family: "DaysSansBlack", "Rubik", Arial, sans-serif;	font-weight: 700;
+	font-size: 2.4rem;
+	color: #fff;
+	text-transform: uppercase;
+	background: transparent;}
+@media (max-width: 1480px) and (min-width: 1025px) {
+	.booking__title { 		font-size: 2.4rem;  	}
+}
+@media (min-width: 1481px) {
+	.booking__title { 		font-size: 3.6rem;	}
+	.booking__price { 		font-size: 2.1rem; 	}
+	.booking__result-label { 		font-size: 1.6rem; 	}
+	.booking__result-row_price .booking__result-label { 		font-size: 1.4rem; 	}
+}
+.opening-contacts-routes__descr {
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s; }
+.opening-contacts { 	min-height: calc(100vh - 70px); }
+@media (min-width: 481px) {
+	.opening-contacts-routes__title {		padding: 8px 20px 7px; 	}
+}
+@media (max-width: 1480px) and (min-width: 481px) {
+	.opening-contacts-routes__title { 		padding: 10px 25px 8px; 	}
+}
+@media (max-height: 1000px) {
+	.opening-contacts { 		padding-bottom: 200px; 	}
+}
+@media (max-height: 910px) {
+	.footer-wrap { 		padding-bottom: 50px 	}
+	.opening-contacts { 		padding-bottom: 160px; 	}
+}
+@media (max-height: 850px) {
+	.opening-contacts { 		min-height: auto; 	}
+}
+.soc-links a {	line-height: 35px; }
+.news-item__descr { max-height: 10.5rem; }
+.news-item__more { margin-top: 3rem; }.news-item_promo .news-item__descr {color: rgb(220,220,220); }.news-item__img::before,.instagram-best__img::before { display: none; }
+@media (max-width: 1480px) and (min-width: 1025px) {
+	.news-item__content,
+	.news-item_promo .news-item__content { padding: 30px; }
+}
+.instagram-best__descr { max-height: 4rem; overflow: hidden; }

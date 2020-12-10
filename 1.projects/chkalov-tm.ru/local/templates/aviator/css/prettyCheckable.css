@@ -1,0 +1,9 @@
+.clearfix:before,.clearfix:after{content:"";display:table}.clearfix:after{clear:both}.clearfix{*zoom:1}.prettycheckbox,.prettyradio{display:inline-block;padding:0;margin:0}.prettycheckbox>a,.prettyradio>a{height:30px;width:30px;display:block;float:left;cursor:pointer;margin:0;background:url('../img/sprites-sfa68604977.png')}.prettycheckbox>a:focus,.prettyradio>a:focus{outline:0 none}.prettycheckbox label,.prettyradio label{display:block;float:left;margin:6px 5px;cursor:pointer}.prettycheckbox a.disabled,.prettycheckbox label.disabled,.prettyradio a.disabled,.prettyradio label.disabled{cursor:not-allowed}.prettycheckbox>a{}.prettycheckbox>a:focus{}.prettycheckbox>a.checked{}.prettycheckbox>a.checked:focus{}.prettycheckbox>a.checked.disabled{}.prettycheckbox>a.disabled{}.prettyradio>a{}.prettyradio>a:focus{}.prettyradio>a.checked{}.prettyradio>a.checked:focus{}.prettyradio>a.checked.disabled{}.prettyradio>a.disabled{}
+.prettycheckbox > div.checked { background-position: 0 -56px;}
+
+
+.prettycheckbox > div { margin-right: 18px; width: 32px; height: 32px; cursor: pointer; float: left; -webkit-transition: none; transition: none; position: relative; background: url(../images/pretty-check-bg.jpg); background-position: 0 0; }
+.prettyradio > div { width: 26px; height: 26px; float: left; cursor: pointer; background:url(../images/pretty-radio-bg.png);}
+.prettyradio > div.checked { background-position: 0 -26px;}
+.prettycheckbox > div.checked { background-position: 0 -32px;}
+.prettyradio label { line-height: 12px;}

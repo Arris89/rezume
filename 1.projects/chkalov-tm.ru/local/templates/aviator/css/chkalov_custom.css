@@ -1,0 +1,56 @@
+.wa-subscribe-form{display:none;}
+.wa-auth-adapters ul{list-style:none;}
+.wa-auth-adapters ul li{margin-left:12px;display:inline-block;opacity:1;}
+.wa-auth-adapters ul li img{height:37px;width:36px;}
+.wa-submit input{float:left;margin-right:3px;padding:0 32px 0 30px;line-height:52px;cursor:pointer;background:url(../images/top-offer-more-bg.png) 92% 50% no-repeat #88003d;border-radius:3px;display:inline-block;border:2px solid #88003d;border-radius:2px;font-size:20px;color:#fff;font-family:'Open Sans', Arial, sans-serif;}
+.wa-submit{text-align:right;text-decoration:underline;}
+.wa-name{display:none;}
+
+.wa-value.wa-submit a {
+    display: block;
+}
+.shop_favorites a:nth-child(2){display:none!important;}
+.shop_favorites{display:inline-block}
+.shop_favorites_not{display:inline-block}
+.filters .range-wrap{height:48px;position:relative;}
+.filters .range-wrap:before{content:'';height:2px;background:#000;position:absolute;top:24px;left:1px;right:2px;z-index:-1;}
+.filters .ui-widget-content{top:24px;width:181px;height:2px;background:none;position:relative;border:none;}
+.filters .ui-state-default, .filters .ui-widget-content .ui-state-default, .filters .ui-widget-header .ui-state-default{z-index:1;position:absolute;margin:0;top:-24px;width:85px;height:46px;background:#fff;border:1px solid #747474;border-radius:0;color:#000;font-size:18px;line-height:46px;text-align:center;}
+.filters .ui-state-active{z-index:10;}
+.radio{}
+.checkout-options .hint{position:relative;top:-11px;}
+.breadcrumbs li{position:relative;cursor:pointer;}
+.breadcrumbs li .siblings-cats{display:none;position:absolute;z-index:1007;background-color:white;box-shadow:1px 1px 1px 1px #b7b7b7;}
+.breadcrumbs li:hover .siblings-cats{display:block;}
+.siblings-cats ul li{display:block;margin:7px;float:none;white-space:nowrap;}
+.siblings-cats ul li a{text-decoration:underline!important;}
+.siblings-cats ul li a:hover{text-decoration:none!important;color:#88003d;}
+.prod-go-back{display:inline-block;/*line-height:88px;*/width:30%; float:right;margin-top: 35px; text-align: right}
+.prod-go-back nobr a{text-decoration:underline;}
+.prod-go-back nobr a:hover{text-decoration:none;}
+.plugin_arrived-box .title{font-size:38px;}
+.plugin_arrived-box.popup{padding:40px;width:600px;top:20%;}
+.popup.registration{position:absolute!important;}
+.wa-value.reg-buyer p.hint{padding:0;}
+.breadcrumbs .with-siblings > a{padding-right:15px;}
+.breadcrumbs .with-siblings > a:after{
+    content:"";display:block;position:absolute;width:13px;height:13px;background:url(./img/sel-arrow.png)no-repeat; background-size: 12px 12px;top:9px;right:25px;margin-right:5px;
+}
+.breadcrumbs .with-siblings > span:not(.rarr):after{    content: "";
+    display: block;
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    background: url(./img/sel-arrow.png) no-repeat;
+    background-size: 12px 12px;
+    top: 9px;
+    right: -10px;
+    margin-right: 5px;}
+
+.fixed-paging{
+    position: fixed;
+    bottom: 15px;
+    right: 40px;
+    padding-bottom: 0;
+    z-index: 10;
+}

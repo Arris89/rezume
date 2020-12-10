@@ -1,0 +1,106 @@
+<?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
+$aMenuLinks = Array(
+	Array(
+		"Брюки", 
+		"/catalog/bryuki/",
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Джемперы", 
+		"/catalog/dzhempery/",
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Джинсы", 
+		"/catalog/dzhinsy/",
+		Array(), 
+		Array(), 
+		"" 
+	),	
+	Array(
+		"Жилеты", 
+		"/catalog/zhilety/",
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Кардиганы",
+		"/catalog/cardigans/",
+		Array(),
+		Array(),
+		""
+	),
+	Array(
+		"Куртки",
+		"/catalog/kurtki/",
+		Array(),
+		Array(),
+		""
+	),
+
+
+
+
+	Array(
+		"Майки, футболки",
+		"/catalog/mayki-futbolki/",
+		Array(),
+		Array(),
+		""
+	),
+	Array(
+		"Пиджаки",
+		"/catalog/pidgaki/",
+		Array(),
+		Array(),
+		""
+	),
+	Array(
+		"Пилоты",
+		"/catalog/pilot/",
+		Array(),
+		Array(),
+		""
+	),
+	Array(
+		"Поло",
+		"/catalog/polo/",
+		Array(),
+		Array(),
+		""
+	),
+	Array(
+		"Пуховики, парки",
+		"/catalog/puhoviki/",
+		Array(),
+		Array(),
+		""
+	),
+	Array(
+		"Рубашки",
+		"/catalog/rubashki/",
+		Array(),
+		Array(),
+		""
+	),
+	Array(
+		"Толстовки",
+		"/catalog/tolsovki/",
+		Array(),
+		Array(),
+		""
+	),
+	Array(
+		"Шорты",
+		"/catalog/schorty/",
+		Array(),
+		Array(),
+		""
+	),
+);
+?>

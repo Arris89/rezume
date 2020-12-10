@@ -1,0 +1,49 @@
+/**
+* DISCLAIMER
+*
+* Do not edit or add to this file if you wish to upgrade this module to newer
+* versions in the future. If you wish to customize this module for your
+* needs please contact us at contact@devhub.pl
+*
+*  @author    Devhub <contact@devhub.pl>
+*  @copyright (c)2016 Devhub
+*  @package   ProductLookbooks
+*/
+
+#productlookbooks-grid {  }
+
+.productlookbooks-grid-item {padding: 5px;}
+.productlookbooks-grid-item h2 {  }
+.productlookbooks-grid-item a {  }
+
+.productlookbooks-grid-images { font-size: 0; }
+.productlookbooks-grid-images a { text-decoration: none; opacity: 1; box-shadow: 0 0 30px 0 inset; display: inline-block; vertical-align: top; }
+.productlookbooks-grid-images a:focus,
+.productlookbooks-grid-images a:hover { text-decoration: none; outline: none; opacity: 0.75; }
+.productlookbooks-grid-images img {  }
+
+.productlookbooks-grid-item img { height: 300px; max-width: 100%; }
+
+/* first image */
+.productlookbooks-grid-type-0 {font-size: 0;margin: 0 -5px;}
+.productlookbooks-grid-type-0 .productlookbooks-grid-item {display: inline-block;}
+.productlookbooks-grid-type-0 .productlookbooks-grid-item a {position: relative;display: inline-block;vertical-align: top;overflow: hidden;box-shadow: 0 0 30px 0 inset;opacity: 1}
+.productlookbooks-grid-type-0 .productlookbooks-grid-item a:focus,
+.productlookbooks-grid-type-0 .productlookbooks-grid-item a:hover { text-decoration: none; outline: none; opacity: 0.75; }
+.productlookbooks-grid-type-0 .productlookbooks-grid-item img {  }
+.productlookbooks-grid-type-0 .productlookbooks-grid-name {position: absolute;left: 0;right: 0;bottom: 0;top: initial;text-align: center;background: rgba(0, 0, 0, 0.6);padding: 5px 15px;box-shadow: 0 0 10px 0 #000;color: #cccccc;font-size: 13px;line-height: 1.4em;}
+
+/* one line */
+.productlookbooks-grid-type-1 {  }
+.productlookbooks-grid-type-1 .productlookbooks-grid-images { white-space: nowrap; overflow: hidden; }
+
+/* all images */
+.productlookbooks-grid-type-2 {  }
+
+@media (min-width: 768px) {
+    .productlookbooks-grid-type-0 .productlookbooks-grid-item a,
+    .productlookbooks-grid-images a { -webkit-transition: opacity 0.35s ease; transition: opacity 0.35s ease; }
+}
+@media (max-width: 767px) {
+    .productlookbooks-grid-item img { width: auto !important; max-width: 100%; height: auto; }
+}

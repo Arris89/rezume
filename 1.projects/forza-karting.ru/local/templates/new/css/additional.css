@@ -1,0 +1,23 @@
+.footer-wrap {
+    position: static;
+    padding: 10px 0;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    color: #fff;
+    background-color: #18191A;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-wrap .container {
+	max-width: 1210px;
+}
+
+.event-format-name {
+    display: none;
+}
+

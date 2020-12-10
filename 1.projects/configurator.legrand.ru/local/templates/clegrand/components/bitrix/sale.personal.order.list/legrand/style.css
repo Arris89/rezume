@@ -1,0 +1,13 @@
+.orders{}
+
+.orders .cabinet__info{
+    margin-bottom: 0;
+}
+
+.orders__item{
+    margin-bottom: 35px;
+}
+
+.c-blue{
+    color: #86c5c1 !important;
+}

@@ -1,0 +1,4 @@
+.filter__checkbox:checked + .filter__label:before 
+{
+    border-color: #9fd577;
+}

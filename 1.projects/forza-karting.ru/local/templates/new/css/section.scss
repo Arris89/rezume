@@ -1,0 +1,151 @@
+.section {
+  padding: 25px 0;
+
+  &_light-grey {
+    @media (min-width: 481px) {
+      border-radius: 15px;
+      padding: 40px 20px;
+      background: $color-light;
+    }
+  }
+
+  &_grey {
+    @media (min-width: 481px) {
+      border-radius: 15px;
+      padding: 40px 20px;
+      background: #ebebeb;
+    }
+  }
+
+  &_dark-grey {
+    background: $color-dark;
+  }
+
+  &_slider-light-columns {
+    position: relative;
+    padding: 0;
+
+    @media (max-width: 550px) {
+      background: none;
+
+      .section__title {
+        padding-left: 50px;
+        padding-right: 50px;
+      }
+
+      .slider-arrow {
+        top: -4px;
+      }
+    }
+
+    @media (min-width: 551px) {
+      margin: 65px 0;
+      padding: 55px 20px 20px;
+    }
+
+    @media (min-width: 1281px) {
+      padding: 25px 30px;
+    }
+  }
+
+  &-halls {
+    margin: 50px 0;
+    padding: 0;
+  }
+
+  // форматы мероприятий
+  &-event-format {
+    margin: 25px 0;
+    padding: 0;
+    border-bottom: 1px solid rgba(#DEDEDE, 0.4);
+
+    @media (max-width: 480px) {
+      &:last-child {
+        margin-bottom: 0 !important;
+      }
+    }
+
+    @media (min-width: 481px) {
+      border-bottom: 0 none;
+    }
+  }
+
+  &_booking {
+    margin: 25px 0 30px;
+    padding: 0;
+  }
+
+  // Мы делали - прошедшие меропритятия
+  &_old-events {
+    margin: 25px -20px;
+    padding: 30px 0 40px;
+
+    &:last-child {
+      margin-bottom: 45px;
+    }
+
+    @media (min-width: 481px) {
+      border-radius: 15px;
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+
+  // У на спроводили корпоративы
+  &_clients {
+    margin: 25px 0;
+    padding: 0;
+
+    @media (min-width: 481px) {
+      margin: 40px 0;
+      padding: 40px 20px;
+    }
+
+    @media (min-width: 1281px) {
+      .clients {
+        margin: 40px auto 10px;
+      }
+    }
+  }
+
+  &_info {
+    @media (max-width: 480px) {
+      .section__title {
+        display: none;
+      }
+    }
+
+    @media (max-width: 768px) {
+      padding: 0;
+      background: none;
+    }
+
+    @media (min-width: 769px) {
+      padding: 25px 30px;
+    }
+  }
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  &:last-child {
+    .container > .section-header + & {
+      margin-bottom: 40px;
+
+      @media (min-width: 481px) {
+        margin-bottom: 60px;
+      }
+    }
+  }
+
+  &__title {
+    margin: 0 0 1em;
+    font-family: $headers-font-family;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    color: $color-dark;
+    @include main-title-font-size;
+  }
+}

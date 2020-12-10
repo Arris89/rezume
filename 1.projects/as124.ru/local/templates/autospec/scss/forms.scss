@@ -1,0 +1,733 @@
+$primaryColor: #16a085;
+$secondaryColor: #f2f2f2;
+
+/*==============================FORMS==============================*/
+.select2-container .select2-selection--single {
+	width: 375px;
+	height: 50px;
+	font-size: 18px;
+    line-height: 22px;
+}
+.select2-container .select2-selection--single .select2-selection__rendered {
+    padding: 10px 20px 10px 8px;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    height: 100%;
+}
+.select2-container--default .select2-selection--single {
+	border: 1px solid transparent;
+}
+.select2-container--default .select2-selection--single:focus {
+	border: 1px solid #aaa;
+	outline: none;
+}
+.select2-search--dropdown {
+	display: none;
+}
+.form-search {
+	width: 100%;
+	position: relative;
+}
+.search {
+    width: 100%;
+    padding: 12px 45px 12px 24px;
+    font-size: 18px;
+    line-height: 22px;
+    color: rgba(255, 255, 255, 0.6);
+	box-shadow: inset 0 4px 0 rgba(0, 0, 0, 0.3);
+	border-radius: 24px;
+	border: 2px solid #ffffff;
+	background-color: #243762;
+}
+.search::-webkit-input-placeholder {
+	color: #fff;
+}
+.search::-moz-placeholder {
+	color: #fff;
+
+}
+.search:-ms-input-placeholder {
+	color: #fff;
+
+}
+.search::-ms-input-placeholder {
+	color: #fff;
+
+}
+.search::placeholder {
+	color: #fff;
+}
+.submit {
+	&-search {
+		border: none;
+		background-color: transparent;
+		display: inline-block;
+		position: absolute;
+		top: calc(50% - 12px);
+		right: 20px;
+	}
+}
+.field {
+	border-radius: 5px;
+	background-color: #fff;
+	font-size: 18px;
+	line-height: 22px;
+	color: #000;
+	width: 100%;
+	border: 1px solid transparent;
+    padding: 13px 15px;
+    transition: all .3s;
+    position: relative;
+    &:focus {
+    	border: 1px solid rgba(91, 91, 91, .5);
+    }
+    &_min {
+    	width: 45%;
+    }
+	&-maniblock {
+		border-radius: 32px;
+		border: 1px solid #ffffff;
+	    padding: 15px 30px 15px 25px;
+		font-size: 18px;
+		line-height: 1.22;
+		color: rgba(255, 255, 255, 0.61);
+		background-color: transparent;
+		color: #fff;
+		margin-right: 14px;
+		max-width: 290px;
+	}
+	&_text {
+		width: 100%;
+		height: 100px;
+		resize: none;
+	}
+}
+.field-maniblock::-webkit-input-placeholder {
+	color: #fff;
+}
+.field-maniblock::-moz-placeholder {
+	color: #fff;
+}
+.field-maniblock:-ms-input-placeholder {
+	color: #fff;
+}
+.field-maniblock::-ms-input-placeholder {
+	color: #fff;
+}
+.field-maniblock::placeholder {
+	color: #fff;
+}
+.field::-webkit-input-placeholder {
+	color: rgba(0, 0, 0, 0.6);
+}
+.field::-moz-placeholder {
+	color: rgba(0, 0, 0, 0.6);
+}
+.field:-ms-input-placeholder {
+	color: rgba(0, 0, 0, 0.6);
+}
+.field::-ms-input-placeholder {
+	color: rgba(0, 0, 0, 0.6);
+}
+.field::placeholder {
+	color: rgba(0, 0, 0, 0.6);
+}
+
+textarea.field-modal {
+	min-height: 95px;
+}
+
+@media only screen and (max-width: 992px) {
+	.search {
+	    padding: 13px 20px;
+	}
+}
+
+@media only screen and (max-width: 650px) {
+	.search {
+	    padding: 11px 20px;
+	}
+
+	.submit {
+		&-search {
+			width: 24px;
+			height: 24px;
+			top: calc(50% - 12px);
+		}
+	}
+}
+@media only screen and (max-width: 425px) {
+	.search {
+	    padding: 11px 20px;
+	}
+	.submit {
+		&-search {
+			width: 24px;
+			height: 24px;
+			top: calc(50% - 12px);
+		}
+	}
+	.btn{
+		&_contacts {
+			padding: 15px 55px;
+			width: 100%;
+		}
+	}
+}
+
+/*==============================FORM==============================*/
+.form {
+	&__label {
+		top: 17px;
+		position: absolute;
+		z-index: 2;
+		color: rgba(0, 0, 0, 0.6);
+		font-size: 18px;
+		line-height: 22px;
+		padding: 14px 20px 0px 20px;
+		transition: all 0.3s ease-out;
+		&.form__label_active {
+			top: -2px;
+			font-size: 12px;
+			line-height: 22px;
+			font-weight: 400;
+			color: #5b5b5b;
+			padding-bottom: 0;
+			padding: 0px;
+		}
+	}
+	&__item {
+	    margin-bottom: 20px;
+	    position: relative;
+	    padding-top: 20px;
+	    &_inline-block {
+	    	width: 35%;
+	    	margin-right: 35px;
+	    	display: inline-block;
+	    }
+	    &_block {
+	    	width: 35%;
+	    	margin-right: 35px;
+	    	display: block;
+	    	margin-bottom: 20px;
+	    }
+	    &_box {
+	    	width: 35%;
+	    	margin-right: 35px;
+	    	display: inline-block;
+	    	margin-bottom: 40px;
+	    }
+	    &_bottom {
+	    	margin-bottom: 10px;
+	    }
+	    &_coll {
+	    	width: 18%;
+	    	margin-right: 20px;
+	    	display: inline-block;
+	    }
+	    &_text {
+	    	width: 97%;
+	    }
+	    &_services {
+	    	width: 73.1%;
+	    }
+	}
+}
+
+@media only screen and (max-width: 1600px) {
+	.form {
+		&__label {
+			padding: 14px 15px 0px 15px;
+		}
+		&__item {
+		    &_coll {
+		    	width: 17.2%;
+		    	display: inline-block;
+		    }
+		}
+	}
+}
+@media only screen and (max-width: 1440px) {
+	.form {
+		&__label {
+			padding: 14px 15px 0px 15px;
+		}
+		&__item {
+		    &_inline-block {
+		    	width: 45%;
+		    	margin-right: 30px;
+		    }
+		    &_coll {
+		    	width: 17.2%;
+		    	display: inline-block;
+		    }
+		    &_services {
+		    	width: 94%;
+		    }
+		}
+	}
+}
+@media only screen and (max-width: 1100px) {
+	.form {
+		&__item {
+		    &_services {
+		    	width: 93.5%;
+		    }
+		}
+	}
+}
+@media only screen and (max-width: 992px) {
+	.form {
+		&__label {
+			padding: 14px 8px 0px;
+		}
+		&__item {
+		    &_block {
+		    	width: 45%;
+		    	margin-right: 30px;
+		    }
+		    &_coll {
+		    	width: 17.5%;
+		    	margin-right: 15px;
+		    }
+		    &_text {
+		    	width: 100%;
+		    }
+		}
+	}
+}
+@media only screen and (max-width: 767px) {
+	.form {
+		&__label {
+			padding: 14px 8px 0px;
+		}
+		&__item {
+		    &_inline-block, &_block {
+		    	width: 100%;
+		    	margin-right: 0px;
+		    }
+		    &_coll {
+		    	width: 30%;
+		    	margin-right: 10px;
+		    }
+		    &_services {
+		    	width: 100%;
+		    }
+		}
+	}
+}
+@media only screen and (max-width: 570px) {
+	.form-item {
+	    margin-bottom: 20px;
+	}
+}
+@media only screen and (max-width: 424px) {
+	.form {
+		&__label {
+			padding: 14px 5px 0px;
+		}
+		&__item {
+		    &_coll {
+		    	width: 29.5%;
+		    }
+		}
+	}
+}
+@media only screen and (max-width: 375px) {
+	.form {
+		&__label {
+			padding: 14px 10px 0px;
+		}
+		&__item {
+		    &_coll {
+		    	width: 46.5%;
+		    }
+		}
+	}
+}
+
+/*==============================CHECKBOX==============================*/
+
+@import "bourbon";
+
+@function rem($val) {
+  @return #{$val}rem;
+}
+
+.list {
+	&__item {
+		display: inline-block;
+		margin-right: 20px;
+	}
+}
+
+.label {
+	&__item {
+		margin: 20px 0px 40px;
+		position: relative;
+	}
+	&__block {
+		margin: 5px 0px 25px;
+	}
+	&--checkbox, 
+	&--radio {
+		position: relative;
+		line-height: 135%;
+		cursor: pointer;
+	}
+	&--checkbox {
+		&-text {
+			display: inline-block;
+			padding-left: 10px;
+		}
+	}
+	&--radio {
+		font-size: 16px;
+		line-height: 1.38;
+		color: #5b5b5b;
+		padding-left: 15px;
+	}
+}
+
+.checkbox {
+  position: relative;
+  top: -13px;
+  margin: 0 1rem 0 0;
+  cursor: pointer;
+  &:before {
+	@include transition(transform .4s cubic-bezier(.45,1.8,.5,.75));
+	@include transform(rotate(-45deg) scale(0, 0));
+	content: "";
+	position: absolute;
+	left: 2px;
+	top: 2px;
+	z-index: 1;
+	width: 15px;
+	height: 11px;
+	background-image: url(../img/icons/modal-checkbox.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+  }
+  &:checked {
+    &:before {
+       @include transform(rotate(0deg) scale(1, 1));
+    }
+  }
+  &-politic {
+  	&:before {
+	    left: 0px;
+	    top: 2px;
+	    z-index: 1;
+	    width: 14px;
+	    height: 12px;
+	    border: 2px solid transparent;
+	    background-image: url(../img/icons/modal-checkbox.png);
+	    background-repeat: no-repeat;
+	    background-size: contain;
+	    background-color: transparent;
+  	}
+  	&:after {
+  		top: 0;
+	    width: 1rem;
+	    height: 1rem;
+	    border: 1px solid rgba(0, 0, 0, 0.5);
+	    border-radius: 2px;
+	    cursor: pointer;
+	    transition: all .3s;
+	}
+	&:checked {
+	    &:before {
+	       transform: rotate(0deg) scale(1, 1);
+	    }
+	    &:after {
+	       
+	    }
+	  }
+  }
+}
+
+.radio {
+  &:before {
+    @include transition(transform .4s cubic-bezier(.45,1.8,.5,.75));
+    @include transform(scale(0,0));
+    content: "";
+    position: absolute;
+    top: calc(50% - 5px);
+    left: 4px;
+    z-index: 1;
+    width: 12px;
+    height: 12px;
+    background: #4c4c4c;
+    border-radius: 50%;
+  }
+  &:checked {
+    &:before {
+     @include transform(scale(1,1)); 
+    }
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background-color: #e1e1e1;
+    border: 1px solid #444;
+    border-radius: 50%;
+  }
+}
+
+.label-desc {
+	opacity: 0.5;
+	color: #000000;
+	font-size: 12px;
+	line-height: 16px;
+	margin-left: 10px;
+	text-decoration: underline;
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+.result {
+  display: block;
+}
+.result span {
+  display: block;
+  margin: 15px 0px 5px;
+  font-size: 14px;
+  color: #9e0000;
+}
+
+@media only screen and (max-width: 768px) {
+	.label {
+		&__item {
+			margin: 20px 0px;
+		}
+	}
+}
+@media only screen and (max-width: 570px) {
+	.list {
+		&__item {
+			display: block;
+			margin-right: 0px;
+			margin-bottom: 15px;
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+
+/*==============================ATTACHMENT==============================*/
+
+.attachment {
+	margin-top: 12px;
+	&__btn {
+		display: block;
+		font-size: 16px;
+		line-height: 1.5;
+		color: #d43d60;
+		img {
+			display: inline-block;
+			vertical-align: middle;
+			margin-right: 8px;
+		}
+	}
+}
+
+/*---------------------arcticmodal------------------------*/
+.arcticmodal {
+  &-overlay,
+  &-container {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+    background: rgba(36, 55, 98, .9) !important;
+    cursor: url(../img/icons/cursor.svg), pointer;
+  }
+  &-container {
+    overflow: auto;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-collapse: collapse;
+    &_i {
+      height: 100%;
+      margin: 0 auto;
+    }
+    &_i2 {
+      padding: 24px;
+      margin: 0;
+      border: 0;
+      vertical-align: middle;
+    }
+  }
+  &-error {
+    padding: 20px;
+    border-radius: 10px;
+    background: #000;
+    color: #fff;
+  }
+  &__window {
+    z-index: 10;
+    position: relative;
+	border-radius: 10px;
+	background-color: #ebecee;
+	padding: 40px 190px 40px 45px;
+	max-width: 695px;
+	cursor: initial;
+	min-height: 660px;
+  }
+  &-close {
+  	width: 32px;
+    height: 32px;
+    background: url(../img/icons/closed.svg) no-repeat center;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+  }
+}
+.modal {
+	&__title {
+	    margin-bottom: 40px;
+		font-size: 36px;
+		font-weight: 500;
+		color: #000000;
+	}
+	&__row {
+		margin-bottom: 20px;
+	}
+	&__img {
+		display: inline-block;
+		vertical-align: top;
+		width: 54px;
+		height: 50px;
+		margin-right: 20px;
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: contain;
+		}
+	}
+	&__desc {
+		display: inline-block;
+		vertical-align: top;
+		width: calc(100% - 80px);
+		color: #444c5f;
+		font-size: 16px;
+		line-height: 26px;
+	}
+	&__form {
+		padding-left: 80px;
+	}
+	&__img-thanks {
+		width: 145px;
+		height: 115px;
+		background-image: url(../img/icons/bg-thanks.svg);
+		position: absolute;
+		bottom: 65px;
+		right: 88px;
+	}
+}
+
+*:first-child + html .arcticmodal-container {
+  height: 100%;
+}
+
+@media only screen and (max-width: 767px) {
+	.arcticmodal {
+		&__window {
+			padding: 40px 60px;
+			max-width: 100%;
+			min-height: 660px;
+		}
+	}
+	.modal {
+		&__form {
+			padding-left: 0px;
+		}
+	}
+}
+@media only screen and (max-width: 550px) {
+	.arcticmodal {
+	    &-container {
+		    &_i2 {
+			    padding: 14px;
+			}
+		}
+		&__window {
+			padding: 40px 30px;
+			max-width: 100%;
+			min-height: 460px;
+		}
+	}
+}
+@media only screen and (max-width: 424px) {
+	.arcticmodal {
+		&__window {
+			padding: 50px 15px 40px;
+			max-width: 100%;
+			min-height: 460px;
+		}
+	}
+	.modal {
+		&__title {
+		    margin-bottom: 20px;
+			font-size: 28px;
+		}
+		&__row {
+			margin-bottom: 10px;
+		}
+		&__img-thanks {
+			right: 25px;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

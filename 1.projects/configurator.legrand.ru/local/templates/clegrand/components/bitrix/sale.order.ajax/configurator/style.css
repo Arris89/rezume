@@ -1,0 +1,15 @@
+.order-page{
+    position: relative;
+}
+
+.decor-form__error{
+    color: #ef4029;
+    line-height: 2;
+}
+.decor-form__field_checker.input-error{
+    color: #ef4029;
+}
+
+.decor-form__field_checker.input-error .checker__box{
+    border-color: #ef4029;
+}

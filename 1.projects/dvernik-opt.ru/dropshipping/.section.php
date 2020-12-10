@@ -1,0 +1,6 @@
+<?
+$sSectionName = "Дропшиппинг";
+$arDirProperties = Array(
+
+);
+?>

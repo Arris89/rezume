@@ -1,0 +1,1710 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <title>Корзина покупок</title>
+    <meta meta="meta" http-equiv="Content-Language" content="ru"/>
+    <meta content="" name="description"/>
+    <meta content="" name="keywords"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0; maximum-scale=1.0; user-scalable=false;"/>
+    <meta content="telephone=no" name="format-detection"/>
+    <meta name="HandheldFriendly" content="true"/>
+    <link rel="stylesheet" href="./module/normalize/normalize.min.css"/>
+    <link rel="stylesheet" href="./module/magnific-popup/magnific-popup.min.css"/>
+    <!--link(rel="stylesheet", href="./module/slick/slick.min.css")-->
+    <link rel="stylesheet" href="./module/simplebar/simplebar.css"/>
+    <link rel="stylesheet" href="./module/selectric/selectric.css"/>
+    <link rel="stylesheet" href="./css/style.css"/>
+    <!--link(href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css", rel="stylesheet", integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN", crossorigin="anonymous")-->
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png"/>
+    <link rel="manifest" href="./favicon/manifest.json"/>
+    <link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#5bbad5"/>
+    <meta name="msapplication-TileColor" content="#da532c"/>
+    <meta name="theme-color" content="#ffffff"/>
+    <script>(function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)</script>
+  </head>
+  <body class="page"><!--[if lte IE 9]>
+    <div class="browserupgrade">
+      <p class="browserupgrade__inner">Вы используете <strong>устаревший</strong> браузер. Пожалуйста, <a style="text-decoration: underline;" href="http://browsehappy.com/">обновите его</a>, чтобы просмотреть сайт</p>
+    </div><![endif]-->
+    <noscript class="noscript">
+      <div class="noscript__wrap">
+        <p class="noscript__text">Пожалуйста, включите JavaScript</p>
+      </div>
+    </noscript>
+    <header class="section-header page__header">
+      <div class="section-header__top">
+        <div class="section-header__basket">
+          <div class="header-basket">
+            <div class="header-basket__left">
+              <svg class="icon icon_shopping-cart">
+                <use xlink:href="svg/sprite/sprite.svg#shopping-cart"></use>
+              </svg>
+            </div>
+            <div class="header-basket__right">
+              <div class="header-basket__title">корзина
+              </div>
+              <div class="header-basket__value">372 товара / 42 700 руб.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section-header__container container">
+          <div class="header">
+            <div class="header__logo"><a class="logo" href="/legrand_configurator"><span class="logo__left"><img src="/legrand_configurator/img/configurator/logo.png" alt="Логотип" title=""/></span><span class="logo__right">конфигуратор</span></a>
+            </div>
+            <div class="header__right">
+              <div class="header__city header__elem">
+                <div class="your-city">
+                  <div class="your-city__block">
+                    <div class="your-city__placeholder">Ваш город:
+                    </div>
+                    <div class="your-city__value js-show-cities">Санкт-Петербург
+                    </div>
+                  </div>
+                  <div class="your-city__question">
+                    <div class="my-btn my-btn_stroked js-city-accept">Да
+                    </div>
+                    <div class="my-btn my-btn_gray my-btn_stroked js-city-change">Нет<span class="laptop-hide">, изменить</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="header__elems">
+                <div class="header__goods header__elem"><a class="icon-text icon-text_hover" href="/deferred.html"><span class="icon-text__icon">
+                  <svg class="icon icon_star">
+                    <use xlink:href="svg/sprite/sprite.svg#star"></use>
+                  </svg></span><span class="icon-text__text">Отложенные товары</span></a>
+                </div>
+                <div class="header__review header__elem"><a class="icon-text icon-text_hover popup-with-move-anim" href="#popup-review"><span class="icon-text__icon">
+                  <svg class="icon icon_envelope">
+                    <use xlink:href="svg/sprite/sprite.svg#envelope"></use>
+                  </svg></span><span class="icon-text__text">Оставить отзыв</span></a>
+                </div>
+              </div>
+              <div class="header__enter header__elem"><a class="icon-text icon-text_hover popup-with-move-anim" href="#popup-enter"><span class="icon-text__icon">
+                <svg class="icon icon_businessman">
+                  <use xlink:href="svg/sprite/sprite.svg#businessman"></use>
+                </svg></span><span class="icon-text__text">Вход</span></a>
+              </div>
+              <div class="header__register"><a class="popup-with-move-anim" href="#popup-register">Регистрация</a>
+              </div>
+            </div>
+            <div class="header__mobile">
+              <div class="header-mobile"><a class="header-mobile__search" href="/specification.html"><i class="fa fa-search"></i></a>
+                <div class="header-mobile__menu">
+                  <div class="hamburger js-slide-menu">
+                    <div class="hamburger__line hamburger__line_1">
+                    </div>
+                    <div class="hamburger__line hamburger__line_2">
+                    </div>
+                    <div class="hamburger__line hamburger__line_3">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="section-header__cities">
+            <div class="header-cities">
+              <div class="header-cities__wrap" data-simplebar="data-simplebar" data-simplebar-auto-hide="false">
+                <ul class="header-cities__list">
+                  <li class="header-cities__item"><a class="header-cities__link js-pick-city" href="#">Абакан</a>
+                  </li>
+                  <li class="header-cities__item"><a class="header-cities__link js-pick-city" href="#">Аксай</a>
+                  </li>
+                  <li class="header-cities__item"><a class="header-cities__link js-pick-city" href="#">Абаза</a>
+                  </li>
+                  <li class="header-cities__item"><a class="header-cities__link js-pick-city" href="#">Актау</a>
+                  </li>
+                  <li class="header-cities__item"><a class="header-cities__link js-pick-city" href="#">Актобе</a>
+                  </li>
+                  <li class="header-cities__item"><a class="header-cities__link js-pick-city" href="#">Александров</a>
+                  </li>
+                  <li class="header-cities__item"><a class="header-cities__link js-pick-city" href="#">Алексин</a>
+                  </li>
+                  <li class="header-cities__item"><a class="header-cities__link js-pick-city" href="#">Алматы</a>
+                  </li>
+                  <li class="header-cities__item"><a class="header-cities__link js-pick-city" href="#">Альметьевск</a>
+                  </li>
+                  <li class="header-cities__item"><a class="header-cities__link js-pick-city" href="#">Абакан</a>
+                  </li>
+                  <li class="header-cities__item"><a class="header-cities__link js-pick-city" href="#">Аксай</a>
+                  </li>
+                  <li class="header-cities__item"><a class="header-cities__link js-pick-city" href="#">Абаза</a>
+                  </li>
+                  <li class="header-cities__item"><a class="header-cities__link js-pick-city" href="#">Актау</a>
+                  </li>
+                  <li class="header-cities__item"><a class="header-cities__link js-pick-city" href="#">Актобе</a>
+                  </li>
+                  <li class="header-cities__item"><a class="header-cities__link js-pick-city" href="#">Александров</a>
+                  </li>
+                  <li class="header-cities__item"><a class="header-cities__link js-pick-city" href="#">Алексин</a>
+                  </li>
+                  <li class="header-cities__item"><a class="header-cities__link js-pick-city" href="#">Алматы</a>
+                  </li>
+                  <li class="header-cities__item"><a class="header-cities__link js-pick-city" href="#">Альметьевск</a>
+                  </li>
+                  <li class="header-cities__item"><a class="header-cities__link js-pick-city" href="#">Абакан</a>
+                  </li>
+                  <li class="header-cities__item"><a class="header-cities__link js-pick-city" href="#">Аксай</a>
+                  </li>
+                  <li class="header-cities__item"><a class="header-cities__link js-pick-city" href="#">Абаза</a>
+                  </li>
+                  <li class="header-cities__item"><a class="header-cities__link js-pick-city" href="#">Актау</a>
+                  </li>
+                  <li class="header-cities__item"><a class="header-cities__link js-pick-city" href="#">Актобе</a>
+                  </li>
+                  <li class="header-cities__item"><a class="header-cities__link js-pick-city" href="#">Александров</a>
+                  </li>
+                  <li class="header-cities__item"><a class="header-cities__link js-pick-city" href="#">Алексин</a>
+                  </li>
+                  <li class="header-cities__item"><a class="header-cities__link js-pick-city" href="#">Алматы</a>
+                  </li>
+                  <li class="header-cities__item"><a class="header-cities__link js-pick-city" href="#">Альметьевск</a>
+                  </li>
+                  <li class="header-cities__item"><a class="header-cities__link js-pick-city" href="#">Абакан</a>
+                  </li>
+                  <li class="header-cities__item"><a class="header-cities__link js-pick-city" href="#">Аксай</a>
+                  </li>
+                  <li class="header-cities__item"><a class="header-cities__link js-pick-city" href="#">Абаза</a>
+                  </li>
+                  <li class="header-cities__item"><a class="header-cities__link js-pick-city" href="#">Актау</a>
+                  </li>
+                  <li class="header-cities__item"><a class="header-cities__link js-pick-city" href="#">Актобе</a>
+                  </li>
+                  <li class="header-cities__item"><a class="header-cities__link js-pick-city" href="#">Александров</a>
+                  </li>
+                  <li class="header-cities__item"><a class="header-cities__link js-pick-city" href="#">Алексин</a>
+                  </li>
+                  <li class="header-cities__item"><a class="header-cities__link js-pick-city" href="#">Алматы</a>
+                  </li>
+                  <li class="header-cities__item"><a class="header-cities__link js-pick-city" href="#">Альметьевск</a>
+                  </li>
+                  <li class="header-cities__item"><a class="header-cities__link js-pick-city" href="#">Абакан</a>
+                  </li>
+                  <li class="header-cities__item"><a class="header-cities__link js-pick-city" href="#">Аксай</a>
+                  </li>
+                  <li class="header-cities__item"><a class="header-cities__link js-pick-city" href="#">Абаза</a>
+                  </li>
+                  <li class="header-cities__item"><a class="header-cities__link js-pick-city" href="#">Актау</a>
+                  </li>
+                  <li class="header-cities__item"><a class="header-cities__link js-pick-city" href="#">Актобе</a>
+                  </li>
+                  <li class="header-cities__item"><a class="header-cities__link js-pick-city" href="#">Александров</a>
+                  </li>
+                  <li class="header-cities__item"><a class="header-cities__link js-pick-city" href="#">Алексин</a>
+                  </li>
+                  <li class="header-cities__item"><a class="header-cities__link js-pick-city" href="#">Алматы</a>
+                  </li>
+                  <li class="header-cities__item"><a class="header-cities__link js-pick-city" href="#">Альметьевск</a>
+                  </li>
+                  <li class="header-cities__item"><a class="header-cities__link js-pick-city" href="#">Абакан</a>
+                  </li>
+                  <li class="header-cities__item"><a class="header-cities__link js-pick-city" href="#">Аксай</a>
+                  </li>
+                  <li class="header-cities__item"><a class="header-cities__link js-pick-city" href="#">Абаза</a>
+                  </li>
+                  <li class="header-cities__item"><a class="header-cities__link js-pick-city" href="#">Актау</a>
+                  </li>
+                  <li class="header-cities__item"><a class="header-cities__link js-pick-city" href="#">Актобе</a>
+                  </li>
+                  <li class="header-cities__item"><a class="header-cities__link js-pick-city" href="#">Александров</a>
+                  </li>
+                  <li class="header-cities__item"><a class="header-cities__link js-pick-city" href="#">Алексин</a>
+                  </li>
+                  <li class="header-cities__item"><a class="header-cities__link js-pick-city" href="#">Алматы</a>
+                  </li>
+                  <li class="header-cities__item"><a class="header-cities__link js-pick-city" href="#">Альметьевск</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section-header__bottom">
+        <div class="section-header__container container">
+          <nav class="nav">
+            <div class="nav__item"><a href="/collections.html">коллекции продукции</a>
+            </div>
+            <div class="nav__item nav__item_active"><a href="/configurator.html"><span>создать проект</span></a>
+            </div>
+            <div class="nav__item"><a href="/receiving-order-2.html">магазины партнеров</a>
+            </div>
+            <div class="nav__item"><a href="/specification.html">собрать спецификацию</a>
+            </div>
+            <div class="nav__item nav__item_basket"><a href="#">
+                <div class="header-basket">
+                  <div class="header-basket__left">
+                    <svg class="icon icon_shopping-cart">
+                      <use xlink:href="svg/sprite/sprite.svg#shopping-cart"></use>
+                    </svg>
+                  </div>
+                  <div class="header-basket__right">
+                    <div class="header-basket__title">корзина
+                    </div>
+                    <div class="header-basket__value">372 товара / 42 700 руб.
+                    </div>
+                  </div>
+                </div></a>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div class="section-header__crumbs">
+        <div class="section-header__container container">
+          <div class="crumbs"><a href="#">Главная</a><span>//</span><a href="/configurator.html">Конфигуратор</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="page__wrapper">
+      <div class="mobile-menu js-menu">
+        <div class="mobile-menu__container">
+          <ul class="mob-mainmenu">
+            <li class="mob-mainmenu__item"><a class="mob-mainmenu__link" href="/legrand_configurator/collections.html">коллекции продукции<span class="mob-mainmenu__arrow">
+              <svg class="icon icon_angle-right">
+                <use xlink:href="svg/sprite/sprite.svg#angle-right"></use>
+              </svg></span></a>
+            </li>
+            <li class="mob-mainmenu__item"><a class="mob-mainmenu__link" href="/legrand_configurator/configurator.html">создать проект<span class="mob-mainmenu__arrow">
+              <svg class="icon icon_angle-right">
+                <use xlink:href="svg/sprite/sprite.svg#angle-right"></use>
+              </svg></span></a>
+            </li>
+            <li class="mob-mainmenu__item"><a class="mob-mainmenu__link" href="/legrand_configurator/receiving-order-2.html">магазины партнеров<span class="mob-mainmenu__arrow">
+              <svg class="icon icon_angle-right">
+                <use xlink:href="svg/sprite/sprite.svg#angle-right"></use>
+              </svg></span></a>
+            </li>
+            <li class="mob-mainmenu__item"><a class="mob-mainmenu__link" href="/legrand_configurator/specification.html">собрать спецификацию<span class="mob-mainmenu__arrow">
+              <svg class="icon icon_angle-right">
+                <use xlink:href="svg/sprite/sprite.svg#angle-right"></use>
+              </svg></span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="popup popup_review zoom-anim-dialog mfp-hide" id="popup-review">
+        <div class="popup__content">
+          <div class="review-popup">
+            <div class="review-popup__title popup-title">оставить отзыв
+            </div>
+            <form class="popup-form" action="#">
+              <div class="popup-form__fields">
+                <div class="popup-form__field">
+                  <label class="label-style"><span class="label-style__head"><span class="label-style__hint">Ваше имя</span><span class="label-style__error">Заполните поле</span></span><input class="input input-style" name="name" type="text" tabindex="0"/>
+                  </label>
+                </div>
+                <div class="popup-form__field">
+                  <label class="label-style"><span class="label-style__head"><span class="label-style__hint">отзыв</span><span class="label-style__error">Заполните поле</span></span>
+                    <textarea class="textarea-style" name="text" cols="30" rows="10"></textarea>
+                  </label>
+                </div>
+                <div class="popup-form__send">
+                  <button class="popup-form__submit my-btn" type="submit">Отправить
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="popup popup_enter zoom-anim-dialog mfp-hide" id="popup-enter">
+        <div class="popup__content">
+          <div class="enter-popup">
+            <div class="enter-popup__title popup-title">вход в  личный кабинет
+            </div>
+            <form class="popup-form" action="#">
+              <div class="popup-form__fields">
+                <div class="popup-form__field">
+                  <label class="label-style"><span class="label-style__head"><span class="label-style__hint">Ваше имя</span></span><input class="input input-style" name="name" type="text" tabindex="0"/>
+                  </label>
+                </div>
+                <div class="popup-form__field">
+                  <label class="label-style"><span class="label-style__head"><span class="label-style__hint">Пароль</span></span><input class="input input-style" name="password" type="password" tabindex="0"/>
+                  </label>
+                </div>
+                <div class="popup-form__send">
+                  <button class="popup-form__submit my-btn" type="submit">Войти
+                  </button>
+                </div>
+              </div>
+            </form>
+            <div class="enter-popup__forget"><a class="legrand-link legrand-link_blue" href="">Забыли пароль?</a>
+            </div>
+            <div class="enter-popup__account">
+              <div class="enter-popup__account-text">Если у вас нет аккаунта, пожалуйста
+              </div>
+              <div class="enter-popup__account-link"><a class="legrand-link legrand-link_blue" href="">зарегистрируйтесь</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="popup popup_register zoom-anim-dialog mfp-hide" id="popup-register">
+        <div class="popup__content">
+          <div class="register-popup">
+            <div class="register-popup__title popup-title">регистрация на сайте
+            </div>
+            <form class="register-form" action="#">
+              <div class="register-form__fields">
+                <div class="register-form__field">
+                  <label class="label-style"><span class="label-style__head"><span class="label-style__hint">Ваше имя</span><span class="label-style__error">Заполните поле</span></span><input class="input input-style" name="name" type="text" tabindex="0"/>
+                  </label>
+                </div>
+                <div class="register-form__field">
+                  <label class="label-style"><span class="label-style__head"><span class="label-style__hint">Фамилия</span><span class="label-style__error">Заполните поле</span></span><input class="input input-style" name="name" type="text" tabindex="0"/>
+                  </label>
+                </div>
+                <div class="register-form__field input-error">
+                  <label class="label-style"><span class="label-style__head"><span class="label-style__hint">Электронная почта</span><span class="label-style__error">Заполните поле</span></span><input class="input input-style" name="name" type="text" tabindex="0"/>
+                  </label>
+                </div>
+                <div class="register-form__field">
+                  <label class="label-style"><span class="label-style__head"><span class="label-style__hint">Контактный телефон</span><span class="label-style__error">Заполните поле</span></span><input class="input input-style" name="name" type="text" tabindex="0"/>
+                  </label>
+                </div>
+                <div class="register-form__field">
+                  <label class="label-style"><span class="label-style__head"><span class="label-style__hint">Пароль</span><span class="label-style__error">Заполните поле</span></span><input class="input input-style" name="name" type="password" tabindex="0"/>
+                  </label>
+                </div>
+                <div class="register-form__field">
+                  <label class="label-style"><span class="label-style__head"><span class="label-style__hint">Повторите пароль</span><span class="label-style__error">Заполните поле</span></span><input class="input input-style" name="name" type="password" tabindex="0"/>
+                  </label>
+                </div>
+                <div class="register-form__field">
+                  <div class="submit my-btn">Оформить заказ
+                  </div>
+                </div>
+                <div class="register-form__field">
+                  <div class="checker">
+                    <label class="checker__label"><input class="input checker__checkbox" name="agree" type="checkbox" tabindex="0"/><span class="checker__box checker__box_2"></span><span class="checker__text">Я согласен на обработку персональных данных и ознакомился с правилами</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </form>
+            <div class="register-popup__bottom">Если вы ранее регистрировались на сайте, то воспользуйтесь входом в <a class="legrand-link legrand-link_blue" href="#">Личный кабинет</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="popup popup_config zoom-anim-dialog mfp-hide" id="popup-config">
+        <div class="popup__content">
+          <div class="config-popup">
+            <div class="config-popup__title">Ваша конфигурация комплекта сохранена
+            </div>
+            <div class="config-popup__kit">
+              <div class="config-popup__kit-left">Комплект Антрацит 5 постов
+              </div>
+              <div class="config-popup__kit-right">
+                <div class="config-popup__kit-blocks">
+                  <div class="config-popup__kit-block">
+                    <div class="config-popup__kit-name">Помещение
+                    </div>
+                    <div class="config-popup__kit-value">
+                      <select class="clear">
+                        <option value="Не выбрано">Не выбрано</option>
+                        <option value="Прихожая">Прихожая</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="config-popup__kit-block">
+                    <div class="config-popup__kit-name">Тип стен
+                    </div>
+                    <div class="config-popup__kit-value">
+                      <select class="clear">
+                        <option value="Не выбрано">Не выбрано</option>
+                        <option value="Гипсокартон">Гипсокартон</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="config-popup__table">
+              <div class="m-table m-table_config">
+                <div class="m-table__head">
+                  <div class="m-table__head-item m-table-column-1">СОСТАВ КОМПЛЕКТУЮЩИХ
+                  </div>
+                  <div class="m-table__head-item m-table-column-2">КОЛ-ВО
+                  </div>
+                  <div class="m-table__head-item m-table-column-3">СТОИМОСТЬ
+                  </div>
+                </div>
+                <div class="m-table__content">
+                  <div class="m-table__body">
+                    <div class="m-table__body-item m-table-column-1"><span class="mob-bold">672202</span> Выключатель двухклавишный - Etika - 10 AX - 250 В~ - белый
+                    </div>
+                    <div class="m-table__body-item m-table-column-2">
+                      <div class="m-table__desktop"><strong> 10 шт </strong>
+                      </div>
+                      <div class="m-table__mob">
+                        <div class="kit-number kit-number_str">
+                          <div class="kit-number__text">кол-во:
+                          </div>
+                          <div class="kit-number__btn kit-number__btn_min">-
+                          </div>
+                          <div class="kit-number__value">1 шт
+                          </div>
+                          <div class="kit-number__btn kit-number__btn_plus">+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="m-table__body-item m-table-column-3">
+                      <div class="m-table__desktop"><strong> 1384,23 руб. </strong>
+                      </div>
+                      <div class="m-table__mob">
+                        <div class="kit-mob">
+                          <div class="kit-mob__image"><img src="img/configurator/frames/3.png" alt="" role="presentation"/>
+                          </div>
+                          <div class="kit-mob__price">ЦЕНА:
+                          </div>
+                          <div class="kit-mob__price-val">145,70 руб.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="m-table__body">
+                    <div class="m-table__body-item m-table-column-1"><span class="mob-bold">672202</span> Выключатель двухклавишный - Etika - 10 AX - 250 В~ - белый
+                    </div>
+                    <div class="m-table__body-item m-table-column-2">
+                      <div class="m-table__desktop"><strong> 10 шт </strong>
+                      </div>
+                      <div class="m-table__mob">
+                        <div class="kit-number kit-number_str">
+                          <div class="kit-number__text">кол-во:
+                          </div>
+                          <div class="kit-number__btn kit-number__btn_min">-
+                          </div>
+                          <div class="kit-number__value">1 шт
+                          </div>
+                          <div class="kit-number__btn kit-number__btn_plus">+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="m-table__body-item m-table-column-3">
+                      <div class="m-table__desktop"><strong> 1384,23 руб. </strong>
+                      </div>
+                      <div class="m-table__mob">
+                        <div class="kit-mob">
+                          <div class="kit-mob__image"><img src="img/configurator/frames/3.png" alt="" role="presentation"/>
+                          </div>
+                          <div class="kit-mob__price">ЦЕНА:
+                          </div>
+                          <div class="kit-mob__price-val">145,70 руб.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="m-table__body">
+                    <div class="m-table__body-item m-table-column-1"><span class="mob-bold">672202</span> Выключатель двухклавишный - Etika - 10 AX - 250 В~ - белый
+                    </div>
+                    <div class="m-table__body-item m-table-column-2">
+                      <div class="m-table__desktop"><strong> 10 шт </strong>
+                      </div>
+                      <div class="m-table__mob">
+                        <div class="kit-number kit-number_str">
+                          <div class="kit-number__text">кол-во:
+                          </div>
+                          <div class="kit-number__btn kit-number__btn_min">-
+                          </div>
+                          <div class="kit-number__value">1 шт
+                          </div>
+                          <div class="kit-number__btn kit-number__btn_plus">+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="m-table__body-item m-table-column-3">
+                      <div class="m-table__desktop"><strong> 1384,23 руб. </strong>
+                      </div>
+                      <div class="m-table__mob">
+                        <div class="kit-mob">
+                          <div class="kit-mob__image"><img src="img/configurator/frames/3.png" alt="" role="presentation"/>
+                          </div>
+                          <div class="kit-mob__price">ЦЕНА:
+                          </div>
+                          <div class="kit-mob__price-val">145,70 руб.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="m-table__body">
+                    <div class="m-table__body-item m-table-column-1"><span class="mob-bold">672202</span> Выключатель двухклавишный - Etika - 10 AX - 250 В~ - белый
+                    </div>
+                    <div class="m-table__body-item m-table-column-2">
+                      <div class="m-table__desktop"><strong> 10 шт </strong>
+                      </div>
+                      <div class="m-table__mob">
+                        <div class="kit-number kit-number_str">
+                          <div class="kit-number__text">кол-во:
+                          </div>
+                          <div class="kit-number__btn kit-number__btn_min">-
+                          </div>
+                          <div class="kit-number__value">1 шт
+                          </div>
+                          <div class="kit-number__btn kit-number__btn_plus">+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="m-table__body-item m-table-column-3">
+                      <div class="m-table__desktop"><strong> 1384,23 руб. </strong>
+                      </div>
+                      <div class="m-table__mob">
+                        <div class="kit-mob">
+                          <div class="kit-mob__image"><img src="img/configurator/frames/3.png" alt="" role="presentation"/>
+                          </div>
+                          <div class="kit-mob__price">ЦЕНА:
+                          </div>
+                          <div class="kit-mob__price-val">145,70 руб.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="m-table__body">
+                    <div class="m-table__body-item m-table-column-1"><span class="mob-bold">672202</span> Выключатель двухклавишный - Etika - 10 AX - 250 В~ - белый
+                    </div>
+                    <div class="m-table__body-item m-table-column-2">
+                      <div class="m-table__desktop"><strong> 10 шт </strong>
+                      </div>
+                      <div class="m-table__mob">
+                        <div class="kit-number kit-number_str">
+                          <div class="kit-number__text">кол-во:
+                          </div>
+                          <div class="kit-number__btn kit-number__btn_min">-
+                          </div>
+                          <div class="kit-number__value">1 шт
+                          </div>
+                          <div class="kit-number__btn kit-number__btn_plus">+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="m-table__body-item m-table-column-3">
+                      <div class="m-table__desktop"><strong> 1384,23 руб. </strong>
+                      </div>
+                      <div class="m-table__mob">
+                        <div class="kit-mob">
+                          <div class="kit-mob__image"><img src="img/configurator/frames/3.png" alt="" role="presentation"/>
+                          </div>
+                          <div class="kit-mob__price">ЦЕНА:
+                          </div>
+                          <div class="kit-mob__price-val">145,70 руб.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="config-popup__settings">
+                <div class="config-popup__settings-blocks">
+                  <div class="settings-block">
+                    <div class="settings-block__item">
+                      <div class="icon-text icon-text_hover">
+                        <div class="icon-text__icon">
+                          <svg class="icon icon_trash">
+                            <use xlink:href="svg/sprite/sprite.svg#trash"></use>
+                          </svg>
+                        </div>
+                        <div class="icon-text__text">Удалить комплект
+                        </div>
+                      </div>
+                    </div>
+                    <div class="settings-block__item">
+                      <div class="icon-text icon-text_hover">
+                        <div class="icon-text__icon">
+                          <svg class="icon icon_gear">
+                            <use xlink:href="svg/sprite/sprite.svg#gear"></use>
+                          </svg>
+                        </div>
+                        <div class="icon-text__text">Изменить комплект
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="config-popup__settings-right">
+                  <div class="kit-number kit-number_str">
+                    <div class="kit-number__text">кол-во:
+                    </div>
+                    <div class="kit-number__btn kit-number__btn_min">-
+                    </div>
+                    <div class="kit-number__value">1 шт
+                    </div>
+                    <div class="kit-number__btn kit-number__btn_plus">+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="config-popup__bottom">
+              <div class="config-popup-bottom">
+                <div class="config-popup-bottom__left">
+                  <div class="config-popup-bottom__btns">
+                    <div class="config-popup-bottom__button my-btn my-btn_stroked">Новый комплект
+                    </div>
+                    <div class="config-popup-bottom__button my-btn">Перейти в корзину
+                    </div>
+                  </div>
+                </div>
+                <div class="config-popup-bottom__right">
+                  <div class="p-price">
+                    <div class="p-price__text">стоимость комплекта
+                    </div>
+                    <div class="p-price__value"><span> 5 310,20 </span> руб.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="popup popup_specification zoom-anim-dialog mfp-hide" id="popup-specification">
+        <div class="popup__content">
+          <div class="specification-popup">
+            <div class="specification-popup__title popup-title">Собранная вами спецификация добавлена в корзину
+            </div>
+            <div class="specification-popup__buttons">
+              <div class="specification-popup__button">
+                <div class="my-btn js-close-popup">Новая спецификация
+                </div>
+              </div>
+              <div class="specification-popup__button"><a class="my-btn" href="basket.html">Перейти в корзину</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section-basket section-style">
+        <div class="section-basket__container container">
+          <div class="basket basket-real">
+            <div class="basket__head">
+              <h1 class="basket__title page-title">корзина покупок
+              </h1>
+              <div class="basket__nav">
+                <div class="basket-nav">
+                  <div class="basket-nav__list">
+                    <div class="basket-nav__item basket-nav__item_active">
+                      <div class="basket-nav__icon">
+                        <svg class="icon icon_list-on-window">
+                          <use xlink:href="svg/sprite/sprite.svg#list-on-window"></use>
+                        </svg>
+                        <!--i.fa.fa-list-alt-->
+                      </div>
+                      <div class="basket-nav__text">состав заказа
+                      </div>
+                      <div class="basket-nav__arrow">
+                        <svg class="icon icon_angle-right">
+                          <use xlink:href="svg/sprite/sprite.svg#angle-right"></use>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="basket-nav__item">
+                      <div class="basket-nav__icon">
+                        <svg class="icon icon_placeholder">
+                          <use xlink:href="svg/sprite/sprite.svg#placeholder"></use>
+                        </svg>
+                        <!--i.fa.fa-map-marker-->
+                      </div>
+                      <div class="basket-nav__text">выберите магазин партнера
+                      </div>
+                      <div class="basket-nav__arrow">
+                        <svg class="icon icon_angle-right">
+                          <use xlink:href="svg/sprite/sprite.svg#angle-right"></use>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="basket-nav__item">
+                      <div class="basket-nav__icon">
+                        <svg class="icon icon_id-card">
+                          <use xlink:href="svg/sprite/sprite.svg#id-card"></use>
+                        </svg>
+                        <!--i.fa.fa-address-card-o-->
+                      </div>
+                      <div class="basket-nav__text">Даные покупателя
+                      </div>
+                      <div class="basket-nav__arrow">
+                        <svg class="icon icon_angle-right">
+                          <use xlink:href="svg/sprite/sprite.svg#angle-right"></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="basket__content">
+              <div class="basket-content">
+                <div class="basket-content__left">
+                  <div class="basket-kit">
+                    <div class="basket-kit__head">
+                      <div class="basket-kit__head-left">товары в вашем заказе
+                      </div>
+                      <div class="basket-kit__head-right">
+                        <div class="icon-text icon-text_hover">
+                          <div class="icon-text__icon">
+                            <div class="close-icon"></div>
+                          </div>
+                          <div class="icon-text__text">Очистить корзину
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <ul class="basket-kit__list">
+                      <li class="basket-kit__item">
+                        <div class="basket-kit__kit">
+                          <div class="basket-kit__kit-left">Комплект лазурь 5 постов
+                          </div>
+                          <div class="basket-kit__kit-mid">
+                            <div class="kit-number kit-number_str">
+                              <div class="kit-number__text">кол-во:
+                              </div>
+                              <div class="kit-number__btn kit-number__btn_min">-
+                              </div>
+                              <div class="kit-number__value">1 шт
+                              </div>
+                              <div class="kit-number__btn kit-number__btn_plus">+
+                              </div>
+                            </div>
+                          </div>
+                          <div class="basket-kit__kit-right">
+                            <div class="basket-kit__params">
+                              <div class="basket-kit__param">
+                                <div class="param">
+                                  <div class="param__name">помещение:
+                                  </div>
+                                  <div class="param__value">
+                                    <select class="clear">
+                                      <option value="Не выбрано">Не выбрано</option>
+                                      <option value="Прихожая">Прихожая</option>
+                                    </select>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="basket-kit__param">
+                                <div class="param">
+                                  <div class="param__name">тип стен:
+                                  </div>
+                                  <div class="param__value">
+                                    <select class="clear">
+                                      <option value="Не выбрано">Не выбрано</option>
+                                      <option value="Прихожая">Гипсокартон</option>
+                                      <option value="Прихожая">Гипсокартон</option>
+                                      <option value="Прихожая">Гипсокартон</option>
+                                      <option value="Прихожая">Гипсокартон</option>
+                                      <option value="Прихожая">Гипсокартон</option>
+                                      <option value="Прихожая">Гипсокартон</option>
+                                      <option value="Прихожая">Гипсокартон</option>
+                                      <option value="Прихожая">Гипсокартон</option>
+                                    </select>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="basket-kit__kit-btns">
+                            <div class="settings-block">
+                              <div class="settings-block__item">
+                                <div class="icon-text icon-text_hover">
+                                  <div class="icon-text__icon">
+                                    <svg class="icon icon_trash">
+                                      <use xlink:href="svg/sprite/sprite.svg#trash"></use>
+                                    </svg>
+                                  </div>
+                                  <div class="icon-text__text">Удалить комплект
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="settings-block__item">
+                                <div class="icon-text icon-text_hover">
+                                  <div class="icon-text__icon">
+                                    <svg class="icon icon_gear">
+                                      <use xlink:href="svg/sprite/sprite.svg#gear"></use>
+                                    </svg>
+                                  </div>
+                                  <div class="icon-text__text">Изменить комплект
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="basket-kit__table">
+                          <div class="m-table m-table_basket">
+                            <div class="m-table__head">
+                              <div class="m-table__head-item m-table-column-1">СОСТАВ КОМПЛЕКТУЮЩИХ
+                              </div>
+                              <div class="m-table__head-item m-table-column-2">КОЛ-ВО (шт.)
+                              </div>
+                              <div class="m-table__head-item m-table-column-3">СТОИМОСТЬ
+                              </div>
+                            </div>
+                            <div class="m-table__content">
+                              <div class="m-table__body">
+                                <div class="m-table__body-item m-table-column-1">
+                                  <div class="m-table__desktop">
+                                    <div class="kit-good-block">
+                                      <div class="kit-good">
+                                        <div class="kit-good__image window-holder"><img src="img/configurator/frames/3.png" alt="" role="presentation"/>
+                                          <div class="p-window">
+                                            <div class="p-window__close">
+                                              <div class="close-icon js-close-p-window">
+                                              </div>
+                                            </div>
+                                            <div class="p-window__wrap">
+                                              <div class="breaker">
+                                                <div class="breaker__image"><img class="breaker__preview" src="img/configurator/frames/window/1.png" alt="Выключатель" title=""/>
+                                                </div>
+                                                <div class="breaker__title">Etika
+                                                </div>
+                                                <div class="breaker__color">Красный
+                                                </div>
+                                                <div class="breaker__posts">Постов: 1 - 5
+                                                </div>
+                                                <div class="breaker__price">Цена 68,80 руб.
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="kit-good__content">
+                                          <div class="kit-good__head">
+                                            <div class="kit-good__name">672581
+                                            </div>
+                                            <div class="kit-good__details"><a class="js-toggle-composition" href="#">Посмотреть состав</a>
+                                            </div>
+                                          </div>
+                                          <div class="kit-good__text">Рамка Антрацит 2 поста Красная
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="kit-good-block__details">
+                                        <div class="kit-good-block__detail">
+                                          <div class="kit-good-detail">
+                                            <div class="kit-good-detail__articul">436763
+                                            </div>
+                                            <div class="kit-good-detail__text">Зарядное устройство
+                                            </div>
+                                            <div class="kit-good-detail__count">1
+                                            </div>
+                                            <div class="kit-good-detail__price">2 716,36 Р
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="kit-good-block__detail">
+                                          <div class="kit-good-detail">
+                                            <div class="kit-good-detail__articul">436763
+                                            </div>
+                                            <div class="kit-good-detail__text">Выключатель двухклавишный - Etika - 10 AX - 250 В~ - белый
+                                            </div>
+                                            <div class="kit-good-detail__count">16
+                                            </div>
+                                            <div class="kit-good-detail__price">23 716,36 Р
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="m-table__mob"><strong>628973</strong> Выключатель двухклавишный - Etika - 10 AX - 250 В~ - белый
+                                  </div>
+                                </div>
+                                <div class="m-table__body-item m-table-column-2">
+                                  <div class="m-table__desktop">
+                                    <div class="kit-number kit-number_centered">
+                                      <div class="kit-number__btn kit-number__btn_min">-
+                                      </div>
+                                      <div class="kit-number__value">1
+                                      </div>
+                                      <div class="kit-number__btn kit-number__btn_plus">+
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="m-table__mob">
+                                    <div class="m-table__row">
+                                      <div class="m-table__row-left">
+                                        <div class="kit-mob">
+                                          <div class="kit-mob__image"><img src="img/configurator/frames/3.png" alt="" role="presentation"/>
+                                          </div>
+                                          <div class="kit-mob__price">ЦЕНА:
+                                          </div>
+                                          <div class="kit-mob__price-val">145,70 руб.
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="m-table__row-right">
+                                        <div class="kit-number kit-number_centered">
+                                          <div class="kit-number__btn kit-number__btn_min">-
+                                          </div>
+                                          <div class="kit-number__value">1
+                                          </div>
+                                          <div class="kit-number__btn kit-number__btn_plus">+
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="kit-good-block kit-good-block_mobile">
+                                      <div class="kit-good-block__button"><a class="js-toggle-composition" href="#">Посмотреть состав</a>
+                                      </div>
+                                      <div class="kit-good-block__details">
+                                        <div class="kit-good-block__detail">
+                                          <div class="kit-good-detail">
+                                            <div class="kit-good-detail__articul">436763
+                                            </div>
+                                            <div class="kit-good-detail__text">Зарядное устройство
+                                            </div>
+                                            <div class="kit-good-detail__count">1
+                                            </div>
+                                            <div class="kit-good-detail__price">2 716,36 Р
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="kit-good-block__detail">
+                                          <div class="kit-good-detail">
+                                            <div class="kit-good-detail__articul">436763
+                                            </div>
+                                            <div class="kit-good-detail__text">Выключатель двухклавишный - Etika - 10 AX - 250 В~ - белый
+                                            </div>
+                                            <div class="kit-good-detail__count">16
+                                            </div>
+                                            <div class="kit-good-detail__price">23 716,36 Р
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="m-table__body-item m-table-column-3"><strong>145,70 руб.</strong>
+                                </div>
+                              </div>
+                              <div class="m-table__body">
+                                <div class="m-table__body-item m-table-column-1">
+                                  <div class="m-table__desktop">
+                                    <div class="kit-good-block">
+                                      <div class="kit-good">
+                                        <div class="kit-good__image window-holder"><img src="img/configurator/frames/2.png" alt="" role="presentation"/>
+                                          <div class="p-window">
+                                            <div class="p-window__close">
+                                              <div class="close-icon js-close-p-window">
+                                              </div>
+                                            </div>
+                                            <div class="p-window__wrap">
+                                              <div class="breaker breaker_2">
+                                                <div class="breaker__top">
+                                                  <div class="breaker__top-left"><img src="img/configurator/frames/window/2.png" alt="Выключатель" title=""/>
+                                                  </div>
+                                                  <div class="breaker__top-right">
+                                                    <div class="breaker__title">Etika
+                                                    </div>
+                                                    <div class="breaker__price">Цена 68,80 руб.
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                                <p class="breaker__desc">Механизм нового поколения Etika для управления освещением с автоматическими клеммами. Выключатель без фиксации с НО/НЗ контактом 6 А. Используется для управления импульсным реле, таймером, звонком, датчиком движения...
+                                                </p>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="kit-good__content">
+                                          <div class="kit-good__head">
+                                            <div class="kit-good__name">672202
+                                            </div>
+                                            <div class="kit-good__details"><a class="js-toggle-composition" href="#">Посмотреть состав</a>
+                                            </div>
+                                          </div>
+                                          <div class="kit-good__text">Выключатель двухклавишный - Etika - 10 AX - 250 В~ - белый
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="kit-good-block__details">
+                                        <div class="kit-good-block__detail">
+                                          <div class="kit-good-detail">
+                                            <div class="kit-good-detail__articul">436763
+                                            </div>
+                                            <div class="kit-good-detail__text">Зарядное устройство
+                                            </div>
+                                            <div class="kit-good-detail__count">1
+                                            </div>
+                                            <div class="kit-good-detail__price">2 716,36 Р
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="kit-good-block__detail">
+                                          <div class="kit-good-detail">
+                                            <div class="kit-good-detail__articul">436763
+                                            </div>
+                                            <div class="kit-good-detail__text">Выключатель двухклавишный - Etika - 10 AX - 250 В~ - белый
+                                            </div>
+                                            <div class="kit-good-detail__count">16
+                                            </div>
+                                            <div class="kit-good-detail__price">23 716,36 Р
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="m-table__mob"><strong>628973</strong> Выключатель двухклавишный - Etika - 10 AX - 250 В~ - белый
+                                  </div>
+                                </div>
+                                <div class="m-table__body-item m-table-column-2">
+                                  <div class="m-table__desktop">
+                                    <div class="kit-number kit-number_centered">
+                                      <div class="kit-number__btn kit-number__btn_min">-
+                                      </div>
+                                      <div class="kit-number__value">1
+                                      </div>
+                                      <div class="kit-number__btn kit-number__btn_plus">+
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="m-table__mob">
+                                    <div class="m-table__row">
+                                      <div class="m-table__row-left">
+                                        <div class="kit-mob">
+                                          <div class="kit-mob__image"><img src="img/configurator/frames/2.png" alt="" role="presentation"/>
+                                          </div>
+                                          <div class="kit-mob__price">ЦЕНА:
+                                          </div>
+                                          <div class="kit-mob__price-val">145,70 руб.
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="m-table__row-right">
+                                        <div class="kit-number kit-number_centered">
+                                          <div class="kit-number__btn kit-number__btn_min">-
+                                          </div>
+                                          <div class="kit-number__value">1
+                                          </div>
+                                          <div class="kit-number__btn kit-number__btn_plus">+
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="kit-good-block kit-good-block_mobile">
+                                      <div class="kit-good-block__button"><a class="js-toggle-composition" href="#">Посмотреть состав</a>
+                                      </div>
+                                      <div class="kit-good-block__details">
+                                        <div class="kit-good-block__detail">
+                                          <div class="kit-good-detail">
+                                            <div class="kit-good-detail__articul">436763
+                                            </div>
+                                            <div class="kit-good-detail__text">Зарядное устройство
+                                            </div>
+                                            <div class="kit-good-detail__count">1
+                                            </div>
+                                            <div class="kit-good-detail__price">2 716,36 Р
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="kit-good-block__detail">
+                                          <div class="kit-good-detail">
+                                            <div class="kit-good-detail__articul">436763
+                                            </div>
+                                            <div class="kit-good-detail__text">Выключатель двухклавишный - Etika - 10 AX - 250 В~ - белый
+                                            </div>
+                                            <div class="kit-good-detail__count">16
+                                            </div>
+                                            <div class="kit-good-detail__price">23 716,36 Р
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="m-table__body-item m-table-column-3"><strong>145,70 руб.</strong>
+                                </div>
+                              </div>
+                              <div class="m-table__body">
+                                <div class="m-table__body-item m-table-column-1">
+                                  <div class="m-table__desktop">
+                                    <div class="kit-good-block">
+                                      <div class="kit-good">
+                                        <div class="kit-good__image window-holder"><img src="img/configurator/frames/4.png" alt="" role="presentation"/>
+                                          <div class="p-window">
+                                            <div class="p-window__close">
+                                              <div class="close-icon js-close-p-window">
+                                              </div>
+                                            </div>
+                                            <div class="p-window__wrap">
+                                              <div class="breaker">
+                                                <div class="breaker__image"><img class="breaker__preview" src="img/configurator/frames/window/1.png" alt="Выключатель" title=""/>
+                                                </div>
+                                                <div class="breaker__title">Etika
+                                                </div>
+                                                <div class="breaker__color">Красный
+                                                </div>
+                                                <div class="breaker__posts">Постов: 1 - 5
+                                                </div>
+                                                <div class="breaker__price">Цена 68,80 руб.
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="kit-good__content">
+                                          <div class="kit-good__head">
+                                            <div class="kit-good__name">672202
+                                            </div>
+                                            <div class="kit-good__details"><a class="js-toggle-composition" href="#">Посмотреть состав</a>
+                                            </div>
+                                          </div>
+                                          <div class="kit-good__text">Выключатель двухклавишный - Etika - 10 AX - 250 В~ - белый
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="kit-good-block__details">
+                                        <div class="kit-good-block__detail">
+                                          <div class="kit-good-detail">
+                                            <div class="kit-good-detail__articul">436763
+                                            </div>
+                                            <div class="kit-good-detail__text">Зарядное устройство
+                                            </div>
+                                            <div class="kit-good-detail__count">1
+                                            </div>
+                                            <div class="kit-good-detail__price">2 716,36 Р
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="kit-good-block__detail">
+                                          <div class="kit-good-detail">
+                                            <div class="kit-good-detail__articul">436763
+                                            </div>
+                                            <div class="kit-good-detail__text">Выключатель двухклавишный - Etika - 10 AX - 250 В~ - белый
+                                            </div>
+                                            <div class="kit-good-detail__count">16
+                                            </div>
+                                            <div class="kit-good-detail__price">23 716,36 Р
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="m-table__mob"><strong>628973</strong> Выключатель двухклавишный - Etika - 10 AX - 250 В~ - белый
+                                  </div>
+                                </div>
+                                <div class="m-table__body-item m-table-column-2">
+                                  <div class="m-table__desktop">
+                                    <div class="kit-number kit-number_centered">
+                                      <div class="kit-number__btn kit-number__btn_min">-
+                                      </div>
+                                      <div class="kit-number__value">1
+                                      </div>
+                                      <div class="kit-number__btn kit-number__btn_plus">+
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="m-table__mob">
+                                    <div class="m-table__row">
+                                      <div class="m-table__row-left">
+                                        <div class="kit-mob">
+                                          <div class="kit-mob__image"><img src="img/configurator/frames/4.png" alt="" role="presentation"/>
+                                          </div>
+                                          <div class="kit-mob__price">ЦЕНА:
+                                          </div>
+                                          <div class="kit-mob__price-val">145,70 руб.
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="m-table__row-right">
+                                        <div class="kit-number kit-number_centered">
+                                          <div class="kit-number__btn kit-number__btn_min">-
+                                          </div>
+                                          <div class="kit-number__value">1
+                                          </div>
+                                          <div class="kit-number__btn kit-number__btn_plus">+
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="kit-good-block kit-good-block_mobile">
+                                      <div class="kit-good-block__button"><a class="js-toggle-composition" href="#">Посмотреть состав</a>
+                                      </div>
+                                      <div class="kit-good-block__details">
+                                        <div class="kit-good-block__detail">
+                                          <div class="kit-good-detail">
+                                            <div class="kit-good-detail__articul">436763
+                                            </div>
+                                            <div class="kit-good-detail__text">Зарядное устройство
+                                            </div>
+                                            <div class="kit-good-detail__count">1
+                                            </div>
+                                            <div class="kit-good-detail__price">2 716,36 Р
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="kit-good-block__detail">
+                                          <div class="kit-good-detail">
+                                            <div class="kit-good-detail__articul">436763
+                                            </div>
+                                            <div class="kit-good-detail__text">Выключатель двухклавишный - Etika - 10 AX - 250 В~ - белый
+                                            </div>
+                                            <div class="kit-good-detail__count">16
+                                            </div>
+                                            <div class="kit-good-detail__price">23 716,36 Р
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="m-table__body-item m-table-column-3"><strong>145,70 руб.</strong>
+                                </div>
+                              </div>
+                              <div class="m-table__body">
+                                <div class="m-table__body-item m-table-column-1">
+                                  <div class="m-table__desktop">
+                                    <div class="kit-good-block">
+                                      <div class="kit-good">
+                                        <div class="kit-good__image window-holder"><img src="img/configurator/frames/5.png" alt="" role="presentation"/>
+                                          <div class="p-window">
+                                            <div class="p-window__close">
+                                              <div class="close-icon js-close-p-window">
+                                              </div>
+                                            </div>
+                                            <div class="p-window__wrap">
+                                              <div class="breaker breaker_2">
+                                                <div class="breaker__top">
+                                                  <div class="breaker__top-left"><img src="img/configurator/frames/window/2.png" alt="Выключатель" title=""/>
+                                                  </div>
+                                                  <div class="breaker__top-right">
+                                                    <div class="breaker__title">Etika
+                                                    </div>
+                                                    <div class="breaker__price">Цена 68,80 руб.
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                                <p class="breaker__desc">Механизм нового поколения Etika для управления освещением с автоматическими клеммами. Выключатель без фиксации с НО/НЗ контактом 6 А. Используется для управления импульсным реле, таймером, звонком, датчиком движения...
+                                                </p>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="kit-good__content">
+                                          <div class="kit-good__head">
+                                            <div class="kit-good__name">672581
+                                            </div>
+                                            <div class="kit-good__details"><a class="js-toggle-composition" href="#">Посмотреть состав</a>
+                                            </div>
+                                          </div>
+                                          <div class="kit-good__text">Рамка Антрацит 2 поста Красная
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="kit-good-block__details">
+                                        <div class="kit-good-block__detail">
+                                          <div class="kit-good-detail">
+                                            <div class="kit-good-detail__articul">436763
+                                            </div>
+                                            <div class="kit-good-detail__text">Зарядное устройство
+                                            </div>
+                                            <div class="kit-good-detail__count">1
+                                            </div>
+                                            <div class="kit-good-detail__price">2 716,36 Р
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="kit-good-block__detail">
+                                          <div class="kit-good-detail">
+                                            <div class="kit-good-detail__articul">436763
+                                            </div>
+                                            <div class="kit-good-detail__text">Выключатель двухклавишный - Etika - 10 AX - 250 В~ - белый
+                                            </div>
+                                            <div class="kit-good-detail__count">16
+                                            </div>
+                                            <div class="kit-good-detail__price">23 716,36 Р
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="m-table__mob"><strong>628973</strong> Выключатель двухклавишный - Etika - 10 AX - 250 В~ - белый
+                                  </div>
+                                </div>
+                                <div class="m-table__body-item m-table-column-2">
+                                  <div class="m-table__desktop">
+                                    <div class="kit-number kit-number_centered">
+                                      <div class="kit-number__btn kit-number__btn_min">-
+                                      </div>
+                                      <div class="kit-number__value">1
+                                      </div>
+                                      <div class="kit-number__btn kit-number__btn_plus">+
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="m-table__mob">
+                                    <div class="m-table__row">
+                                      <div class="m-table__row-left">
+                                        <div class="kit-mob">
+                                          <div class="kit-mob__image"><img src="img/configurator/frames/5.png" alt="" role="presentation"/>
+                                          </div>
+                                          <div class="kit-mob__price">ЦЕНА:
+                                          </div>
+                                          <div class="kit-mob__price-val">145,70 руб.
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="m-table__row-right">
+                                        <div class="kit-number kit-number_centered">
+                                          <div class="kit-number__btn kit-number__btn_min">-
+                                          </div>
+                                          <div class="kit-number__value">1
+                                          </div>
+                                          <div class="kit-number__btn kit-number__btn_plus">+
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="kit-good-block kit-good-block_mobile">
+                                      <div class="kit-good-block__button"><a class="js-toggle-composition" href="#">Посмотреть состав</a>
+                                      </div>
+                                      <div class="kit-good-block__details">
+                                        <div class="kit-good-block__detail">
+                                          <div class="kit-good-detail">
+                                            <div class="kit-good-detail__articul">436763
+                                            </div>
+                                            <div class="kit-good-detail__text">Зарядное устройство
+                                            </div>
+                                            <div class="kit-good-detail__count">1
+                                            </div>
+                                            <div class="kit-good-detail__price">2 716,36 Р
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="kit-good-block__detail">
+                                          <div class="kit-good-detail">
+                                            <div class="kit-good-detail__articul">436763
+                                            </div>
+                                            <div class="kit-good-detail__text">Выключатель двухклавишный - Etika - 10 AX - 250 В~ - белый
+                                            </div>
+                                            <div class="kit-good-detail__count">16
+                                            </div>
+                                            <div class="kit-good-detail__price">23 716,36 Р
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="m-table__body-item m-table-column-3"><strong>145,70 руб.</strong>
+                                </div>
+                              </div>
+                              <div class="m-table__body">
+                                <div class="m-table__body-item m-table-column-1">
+                                  <div class="m-table__desktop">
+                                    <div class="kit-good-block">
+                                      <div class="kit-good">
+                                        <div class="kit-good__image window-holder"><img src="img/configurator/frames/6.png" alt="" role="presentation"/>
+                                          <div class="p-window">
+                                            <div class="p-window__close">
+                                              <div class="close-icon js-close-p-window">
+                                              </div>
+                                            </div>
+                                            <div class="p-window__wrap">
+                                              <div class="breaker">
+                                                <div class="breaker__image"><img class="breaker__preview" src="img/configurator/frames/window/1.png" alt="Выключатель" title=""/>
+                                                </div>
+                                                <div class="breaker__title">Etika
+                                                </div>
+                                                <div class="breaker__color">Красный
+                                                </div>
+                                                <div class="breaker__posts">Постов: 1 - 5
+                                                </div>
+                                                <div class="breaker__price">Цена 68,80 руб.
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="kit-good__content">
+                                          <div class="kit-good__head">
+                                            <div class="kit-good__name">672202
+                                            </div>
+                                            <div class="kit-good__details"><a class="js-toggle-composition" href="#">Посмотреть состав</a>
+                                            </div>
+                                          </div>
+                                          <div class="kit-good__text">Выключатель двухклавишный - Etika - 10 AX - 250 В~ - белый
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="kit-good-block__details">
+                                        <div class="kit-good-block__detail">
+                                          <div class="kit-good-detail">
+                                            <div class="kit-good-detail__articul">436763
+                                            </div>
+                                            <div class="kit-good-detail__text">Зарядное устройство
+                                            </div>
+                                            <div class="kit-good-detail__count">1
+                                            </div>
+                                            <div class="kit-good-detail__price">2 716,36 Р
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="kit-good-block__detail">
+                                          <div class="kit-good-detail">
+                                            <div class="kit-good-detail__articul">436763
+                                            </div>
+                                            <div class="kit-good-detail__text">Выключатель двухклавишный - Etika - 10 AX - 250 В~ - белый
+                                            </div>
+                                            <div class="kit-good-detail__count">16
+                                            </div>
+                                            <div class="kit-good-detail__price">23 716,36 Р
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="m-table__mob"><strong>628973</strong> Выключатель двухклавишный - Etika - 10 AX - 250 В~ - белый
+                                  </div>
+                                </div>
+                                <div class="m-table__body-item m-table-column-2">
+                                  <div class="m-table__desktop">
+                                    <div class="kit-number kit-number_centered">
+                                      <div class="kit-number__btn kit-number__btn_min">-
+                                      </div>
+                                      <div class="kit-number__value">1
+                                      </div>
+                                      <div class="kit-number__btn kit-number__btn_plus">+
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="m-table__mob">
+                                    <div class="m-table__row">
+                                      <div class="m-table__row-left">
+                                        <div class="kit-mob">
+                                          <div class="kit-mob__image"><img src="img/configurator/frames/6.png" alt="" role="presentation"/>
+                                          </div>
+                                          <div class="kit-mob__price">ЦЕНА:
+                                          </div>
+                                          <div class="kit-mob__price-val">145,70 руб.
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="m-table__row-right">
+                                        <div class="kit-number kit-number_centered">
+                                          <div class="kit-number__btn kit-number__btn_min">-
+                                          </div>
+                                          <div class="kit-number__value">1
+                                          </div>
+                                          <div class="kit-number__btn kit-number__btn_plus">+
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="kit-good-block kit-good-block_mobile">
+                                      <div class="kit-good-block__button"><a class="js-toggle-composition" href="#">Посмотреть состав</a>
+                                      </div>
+                                      <div class="kit-good-block__details">
+                                        <div class="kit-good-block__detail">
+                                          <div class="kit-good-detail">
+                                            <div class="kit-good-detail__articul">436763
+                                            </div>
+                                            <div class="kit-good-detail__text">Зарядное устройство
+                                            </div>
+                                            <div class="kit-good-detail__count">1
+                                            </div>
+                                            <div class="kit-good-detail__price">2 716,36 Р
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="kit-good-block__detail">
+                                          <div class="kit-good-detail">
+                                            <div class="kit-good-detail__articul">436763
+                                            </div>
+                                            <div class="kit-good-detail__text">Выключатель двухклавишный - Etika - 10 AX - 250 В~ - белый
+                                            </div>
+                                            <div class="kit-good-detail__count">16
+                                            </div>
+                                            <div class="kit-good-detail__price">23 716,36 Р
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="m-table__body-item m-table-column-3"><strong>145,70 руб.</strong>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="basket-kit__bottom">
+                          <div class="basket-kit-bottom basket-kit-bottom_basket">
+                            <div class="basket-kit-bottom__btns">
+                              <div class="basket-kit-bottom__btn">
+                                <div class="icon-text icon-text_hover">
+                                  <div class="icon-text__icon">
+                                    <svg class="icon icon_gear">
+                                      <use xlink:href="svg/sprite/sprite.svg#gear"></use>
+                                    </svg>
+                                  </div>
+                                  <div class="icon-text__text">Изменить комплект
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="basket-kit-bottom__btn">
+                                <div class="icon-text icon-text_hover">
+                                  <div class="icon-text__icon">
+                                    <svg class="icon icon_trash">
+                                      <use xlink:href="svg/sprite/sprite.svg#trash"></use>
+                                    </svg>
+                                  </div>
+                                  <div class="icon-text__text">Удалить комплект
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="basket-kit-bottom__price">
+                              <div class="p-price p-price_inline">
+                                <div class="p-price__text">стоимость <br> комплекта
+                                </div>
+                                <div class="p-price__value"><span> 5 310,20 </span> руб.
+                                </div>
+                              </div>
+                            </div>
+                            <div class="basket-kit-bottom__later">
+                              <div class="basket-kit-bottom__button my-btn my-btn_gray my-btn_sm">купить позже
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="basket-content__right">
+                  <div class="basket-panel">
+                    <div class="basket-panel__top">
+                      <div class="basket-panel__download">
+                        <div class="basket-panel__download-text">скачать спецификацию в 
+                        </div><a class="basket-panel__download-link" download="download" href="#">xls</a><a class="basket-panel__download-link" download="download" href="#">pdf</a>
+                      </div>
+                    </div>
+                    <div class="basket-panel__main">
+                      <div class="basket-panel__main-top">
+                        <div class="basket-panel__block">
+                          <div class="basket-panel__title basket-panel__title_input">Введите название проекта
+                          </div>
+                          <div class="basket-panel__input"><input class="input input-style" name="text" type="text" tabindex="0"/>
+                          </div>
+                        </div>
+                        <div class="basket-panel__block">
+                          <div class="basket-panel__title">количество товаров
+                          </div>
+                          <div class="basket-panel__value">22 позиции
+                          </div>
+                        </div>
+                        <div class="basket-panel__title">получение заказа
+                        </div>
+                        <div class="basket-panel__value">В магазине партнера
+                        </div>
+                      </div>
+                      <div class="basket-panel__main-mid">
+                        <div class="basket-panel__title">итоговая стоимость
+                        </div>
+                        <div class="basket-panel__price"><span>10 620,40 </span> руб.
+                        </div>
+                        <div class="basket-panel__hint">Стоимость продукции носит исключительно справочный характер, конечная цена в магазине партнера может отличаться.
+                        </div>
+                      </div>
+                      <div class="basket-panel__main-bottom">
+                        <div class="basket-panel__title basket-panel__title_2 basket-panel__title_order">Включить в заказ <br><span>22 подразетника</span> Legrand?
+                        </div>
+                        <div class="basket-panel__checkboxes">
+                          <div class="basket-panel__checkbox">
+                            <div class="checker">
+                              <label class="checker__label"><input class="input checker__checkbox" name="mark" type="checkbox" tabindex="0"/><span class="checker__box"><span class="check-icon"></span></span><span class="checker__text">Гипсокартонные + 450 руб. (150 руб * 3 шт.)</span>
+                              </label>
+                            </div>
+                          </div>
+                          <div class="basket-panel__checkbox">
+                            <div class="checker">
+                              <label class="checker__label"><input class="input checker__checkbox" name="mark" type="checkbox" tabindex="0"/><span class="checker__box"><span class="check-icon"></span></span><span class="checker__text">Бетонные + 300 руб. (100 руб * 3 шт.)</span>
+                              </label>
+                            </div>
+                          </div>
+                          <div class="basket-panel__checkbox">
+                            <div class="checker">
+                              <label class="checker__label"><input class="input checker__checkbox" name="mark" type="checkbox" tabindex="0"/><span class="checker__box"><span class="check-icon"></span></span><span class="checker__text">Не включать</span>
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="basket-panel__bottom">
+                      <div class="basket-panel__button my-btn">оформить заказ
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="page__footer">
+      <div class="page__container container">
+        <div class="footer">
+          <div class="footer__left">
+            <div class="footer__logo"><a href="/"><img src="img/configurator/footer-logo.png" alt="Логотип" title=""/></a>
+            </div>
+            <div class="footer__agreement"><a href="#">Пользовательское соглашение <br> и политика конфиденциальности</a>
+            </div>
+            <div class="footer__copyright">Мировой специалист по электрическим и информационным системам зданий. © 2019 Legrand. All Rights Reserved. Данный сайт носит информационно-справочный характер и ни при каких условиях не является публичной офертой.
+            </div>
+          </div>
+          <div class="footer__right">
+            <div class="site-lang"><img src="img/configurator/lang/eng.png" alt="Страна" title=""/>
+              <div class="site-lang__text">Россия
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./module/jquery/jquery-3.3.1.min.js"></script>
+    <script>
+      window.jQuery || document.write('<script src="https://code.jquery.com/jquery-3.3.1.min.js", integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=", crossorigin="anonymous"><\/script>')
+      
+    </script>
+    <script src="./module/svg4everybody/svg4everybody.min.js"></script>
+    <script>svg4everybody();</script>
+    <script src="./module/picturefill/picturefill.min.js"></script>
+    <script src="./module/phone-mask/jquery.mask.js"></script>
+    <script src="./module/simplebar/simplebar.min.js"></script>
+    <!--script(src="./module/jquery-ui.min.js")-->
+    <script src="./module/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="./module/selectric/jquery.selectric.min.js"></script>
+    <script src="./module/babel-polyfill/polyfill.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.plugins.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?&amp;lang=ru_RU"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+    .pagenotfound {
+  max-width: 824px;
+  margin: 100px auto 100px auto;
+  text-align: center; }
+.pagenotfound .img-404 {
+    padding: 8px 0 27px 0; }
+  .pagenotfound .img-404 img {
+      max-width: 100%; }
+  .pagenotfound h1 {
+    font: 600 28px/34px 'Conv_EngraversGothic BT', sans-serif;
+    color: #333;
+    text-transform: uppercase;
+    margin-bottom: 7px; }
+ .pagenotfound p {
+    font: 600 16px/20px 'Uni Neue Light', sans-serif;
+    color: #555454;
+    text-transform: uppercase;
+    border-bottom: 1px solid #d6d4d4;
+    padding-bottom: 19px;
+    margin-bottom: 20px; }
+ .pagenotfound h3,.pagenotfound .h3 {
+    font-weight: bold;
+    color: #333;
+    font-size: 13px;
+    line-height: normal;
+    margin-bottom: 18px; }
+ .pagenotfound label {
+    font-weight: normal; }
+    @media (max-width: 767px) {
+    .pagenotfound label {
+        display: block; } }
+ .pagenotfound .form-control {
+    max-width: 293px;
+    display: inline-block;
+    margin-right: 5px; }
+    @media (max-width: 767px) {
+ .pagenotfound .form-control {
+        margin: 0 auto 15px auto;
+        display: block; } }
+.pagenotfound .buttons {
+    padding: 48px 0 20px 0; }
+  .pagenotfound .buttons .button-medium i.left {
+      font-size: 17px; }

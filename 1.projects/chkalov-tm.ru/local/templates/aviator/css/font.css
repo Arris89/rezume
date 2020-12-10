@@ -1,0 +1,9 @@
+@font-face {
+    font-family: "Corki";
+    src: url("fonts/CorkiRegular.eot");
+    src: url("fonts/CorkiRegular.eot?#iefix")format("embedded-opentype"),
+    url("fonts/CorkiRegular.woff") format("woff"),
+    url("fonts/CorkiRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
